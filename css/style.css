@@ -20,6 +20,7 @@
     --callout-bg: #e6f4ea;
     --callout-text: #137333;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 }
 
 /* Reset and Base Styles */
@@ -46,6 +47,77 @@ body {
 a {
     text-decoration: none;
     color: var(--link-color);
+}
+
+/* Alphabet Grid Styles */
+.alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin: 1.5rem 0;
+}
+@media (max-width: 600px) {
+    .alphabet-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 400px) {
+    .alphabet-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.alphabet-cell {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px 8px;
+    text-align: center;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.alphabet-cell:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-color: var(--link-color);
+}
+.nepali-char {
+    font-family: 'Kalimati', sans-serif;
+    font-size: 2.2rem;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+.roman-char {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-family: var(--font-mono);
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+.nepali-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    min-width: 400px;
+}
+.nepali-table th, .nepali-table td {
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: left;
+}
+.nepali-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+.nepali-table td:nth-child(1), .nepali-table td:nth-child(2), .nepali-table td:nth-child(3) {
+    font-size: 1.1rem;
 }
 
 a:hover {
