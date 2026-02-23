@@ -1601,24 +1601,2681 @@ const courseData = [
                             <p>If you can wield those three phrases, you have 70% of daily opinions covered. Keep it simple, and don't overthink it.</p>
                         `
                     },
-                    { id: "lesson-06", title: "06 Agreeing and disagreeing" },
-                    { id: "lesson-07", title: "07 Making suggestions" },
-                    { id: "lesson-08", title: "08 Saying thank you" },
-                    { id: "lesson-09", title: "09 Saying sorry" },
-                    { id: "lesson-10", title: "10 Saying goodbye" },
-                    { id: "lesson-11", title: "11 Dates, time, and weather" },
-                    { id: "lesson-12", title: "12 Making arrangements" },
-                    { id: "lesson-13", title: "13 Talking about the weather" }
+                    { 
+                        id: "lesson-06", 
+                        title: "06 Agreeing and disagreeing",
+                        content: `
+                            <h2>06 Agreeing & Disagreeing (Picking Your Battles)</h2>
+                            <p>You can’t just nod and say "Okay" forever. If you are going to survive a real conversation, you have to know how to back someone up, how to casually disagree without starting a fight, and how to completely shut an argument down when you’ve had enough.</p>
+                            <p>Nepali culture generally avoids direct confrontation, so our disagreements are usually wrapped in softer language. But when we agree with someone? We go all in.</p>
+                            <p>Let’s break down the spectrum.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); text-align: center;">
+                                <h4 style="margin-top: 0; margin-bottom: 1.5rem; color: #374151;">The Agreement Spectrum</h4>
+                                <div style="position: relative; height: 60px; display: flex; align-items: center;">
+                                    <!-- The Track -->
+                                    <div style="position: absolute; width: 100%; height: 8px; background: linear-gradient(to right, #4caf50, #ffeb3b, #f44336); border-radius: 4px;"></div>
+                                    
+                                    <!-- Markers -->
+                                    <div style="position: absolute; left: 0%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center;">
+                                        <div style="width: 20px; height: 20px; background: #fff; border: 4px solid #4caf50; border-radius: 50%; z-index: 2;"></div>
+                                        <div style="margin-top: 8px; font-weight: bold; color: #2e7d32; font-size: 0.9rem;">पक्का / एकदम सही<br><span style="font-weight: normal; font-size: 0.8rem;">(100% Agree)</span></div>
+                                    </div>
+
+                                    <div style="position: absolute; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center;">
+                                        <div style="width: 20px; height: 20px; background: #fff; border: 4px solid #fbc02d; border-radius: 50%; z-index: 2;"></div>
+                                        <div style="margin-top: 8px; font-weight: bold; color: #f57f17; font-size: 0.9rem;">मलाई त्यस्तो लाग्दैन<br><span style="font-weight: normal; font-size: 0.8rem;">(Neutral/Soft Disagree)</span></div>
+                                    </div>
+
+                                    <div style="position: absolute; left: 100%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center;">
+                                        <div style="width: 20px; height: 20px; background: #fff; border: 4px solid #f44336; border-radius: 50%; z-index: 2;"></div>
+                                        <div style="margin-top: 8px; font-weight: bold; color: #c62828; font-size: 0.9rem;">होइन नि<br><span style="font-weight: normal; font-size: 0.8rem;">(Strong Disagree)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <h3 style="margin: 0;">1. Strong Agreement (The "Hell Yes")</h3>
+                            </div>
+                            <p>When someone makes a great point and you are 100% on board.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">यो हाम्रो priority हुनुपर्छ।</span> (Yo hamro priority hunu parcha.)</strong><br>
+                                    <em>Meaning: We need to make this our priority. (Peak Kathmandu Nepanglish. We use the English word "priority" constantly).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">पक्का।</span> (Pakka.) / <span class="nepali-font">बिल्कुल।</span> (Bilkul.)</strong><br>
+                                    <em>Meaning: Absolutely. / Exactly.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ठिक भन्नुभयो।</span> (Thik bhannu bhayo.)</strong><br>
+                                    <em>Meaning: You said it exactly right. (Use this with elders or professionals—it shows high respect).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हो, त्यही त!</span> (Ho, tyahi ta!)</strong><br>
+                                    <em>Meaning: Yes, exactly! (This is the ultimate casual agreement. You will hear this a hundred times a day in cafes).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तपाईँ एकदम सही हुनुहुन्छ।</span> (Tapai ekdam sahi hunuhuncha.)</strong><br>
+                                    <em>Meaning: You’re so right.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म पूरै सहमत छु।</span> (Ma purai sahamat chu.)</strong><br>
+                                    <em>Meaning: I totally agree. (Reality Check: This is a bit formal. In real life, people just enthusiastically nod and say "Ekdam, ekdam" instead).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #8bc34a;"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                                <h3 style="margin: 0;">2. Casual Agreement (The "Yeah, man")</h3>
+                            </div>
+                            <p>When you’re just tracking with the conversation and relating to their experience.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मैले पनि बुझिनँ।</span> (Maile pani bujhina.)</strong><br>
+                                    <em>Meaning: I didn’t get it either.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">बुझेँ।</span> (Bujhe.) / <span class="nepali-font">म बुझ्छु तिम्रो कुरा।</span> (Ma bujhchu timro kura.)</strong><br>
+                                    <em>Meaning: I hear you. / I understand your point.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मैले बुझेँ के भन्नुभएको।</span> (Maile bujhe k bhannu bhako.)</strong><br>
+                                    <em>Meaning: I know what you mean. (Respectful).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म पनि।</span> (Ma pani.) / <span class="nepali-font">मलाई पनि।</span> (Malai pani.)</strong><br>
+                                    <em>Meaning: Me too. / So do I.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                                <h3 style="margin: 0;">3. Soft Disagreement (The "I don't know about that")</h3>
+                            </div>
+                            <p>Remember, Nepalis hate bluntness. You rarely just yell "Wrong!" You soften it so the other person saves face.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मलाई अलि क्लियर भएन।</span> (Malai ali clear bhayena.)</strong><br>
+                                    <em>Meaning: I’m not convinced. (Literally: It didn't become clear to me. Blaming your own clarity is a very polite way to disagree).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म पक्का छैन।</span> (Ma pakka chaina.)</strong><br>
+                                    <em>Meaning: I’m not sure.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मलाई त्यस्तो लाग्दैन।</span> (Malai testo lagdaina.)</strong><br>
+                                    <em>Meaning: I don’t think so. (This is your ultimate, everyday polite disagreement. Memorize it).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">यो कुरामा म सहमत छैन।</span> (Yo kura ma ma sahamat chaina.)</strong><br>
+                                    <em>Meaning: I’m not with you on this. (A bit more formal and direct).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f44336;"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                <h3 style="margin: 0;">4. Strong Disagreement (The "Hell No")</h3>
+                            </div>
+                            <p>When you are with friends and someone says something completely ridiculous, you can take the gloves off.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हुँदै हुँदैन।</span> (Hundai hundaina.) / <span class="nepali-font">हुँदैन।</span> (Hundaina.)</strong><br>
+                                    <em>Meaning: No way. / Absolutely not happening.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">होइन नि...</span> (Hoina ni...)</strong><br>
+                                    <em>Meaning: Come on... / Not at all. (Street Hack: To sound truly local, stretch the last syllable out. "Hoina niii..." It shows you think they are being absurd).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ऊले गल्ती गरेको हो।</span> (U le galti gareko ho.)</strong><br>
+                                    <em>Meaning: She/He was in the wrong. / They messed up.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9e9e9e;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+                                <h3 style="margin: 0;">5. Agreeing to Disagree (Killing the Argument)</h3>
+                            </div>
+                            <p>Sometimes you just need to pull the plug on a conversation before it gets heated. Here is how you gracefully exit.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">यो कुरामा हामी सहमत नहुन सक्छौँ।</span> (Yo kura ma hami sahamat nahuna sakcham.)</strong><br>
+                                    <em>Meaning: We might have to agree to disagree. (Formal).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">छोड्देऊ यो कुरा।</span> (Chhoddeu yo kura.)</strong><br>
+                                    <em>Meaning: Let’s drop it. (Casual. Literally: Leave this topic).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अब अर्को कुरा गरौँ।</span> (Aba arko kura garam.)</strong><br>
+                                    <em>Meaning: Let’s move on. (Literally: Now let's talk about another thing).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <h3>The Mechanics: Your Core Toolkit</h3>
+                            <p>If you look closely at all those phrases, they are built on a very simple foundation. If you forget everything else, just remember these core anchors:</p>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0;">
+                                <div style="background: #e3f2fd; padding: 1rem; border-radius: 8px; border-left: 4px solid #1976d2;">
+                                    <strong><span class="nepali-font">सहमत छु</span> (Sahamat chu) / <span class="nepali-font">सहमत छैन</span> (Sahamat chaina)</strong><br>
+                                    <span style="color: #1976d2;">= I agree / I disagree. (Formal)</span>
+                                </div>
+                                <div style="background: #e8f5e9; padding: 1rem; border-radius: 8px; border-left: 4px solid #388e3c;">
+                                    <strong><span class="nepali-font">लाग्छ</span> (Lagcha) / <span class="nepali-font">लाग्दैन</span> (Lagdaina)</strong><br>
+                                    <span style="color: #388e3c;">= I think / I don’t think. (Everyday)</span>
+                                </div>
+                            </div>
+                            <p>You can build almost any argument off those two sets of words.</p>
+                        `
+                    },
+                    { 
+                        id: "lesson-07", 
+                        title: "07 Making suggestions",
+                        content: `
+                            <h2>07 Making & Dodging Plans (The Art of the Soft "No")</h2>
+                            <p>Alright, let’s talk about making plans. In the West, if you want to hang out, you ask "Why don't we go somewhere?" And if the person doesn't want to, they just say, "Nah, I don't feel like it."</p>
+                            <p>If you do that in Nepal, you’re going to sound like a sociopath. We have an entire social dance for making, accepting, and—most importantly—rejecting plans without ruining relationships.</p>
+                            <p>Here is exactly how you navigate your weekend.</p>
+
+                            <div style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+                                <div style="display: flex; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden;">
+                                    <div style="flex: 1; padding: 1.5rem; border-right: 1px solid var(--border-color); text-align: center;">
+                                        <h4 style="margin-top: 0; color: #374151;">Western Plans</h4>
+                                        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                                            <div style="font-size: 2rem;">🏖️</div>
+                                            <div style="font-size: 2rem;">🍻</div>
+                                            <div style="font-size: 2rem;">🏰</div>
+                                        </div>
+                                        <p style="font-size: 0.85rem; color: #6b7280; margin-top: 1rem;">Beach, Pub, Castle</p>
+                                    </div>
+                                    <div style="flex: 1; padding: 1.5rem; text-align: center; background: #e8f5e9;">
+                                        <h4 style="margin-top: 0; color: #2e7d32;">Nepali Plans</h4>
+                                        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                                            <div style="font-size: 2rem;">🏞️</div>
+                                            <div style="font-size: 2rem;">☕</div>
+                                            <div style="font-size: 2rem;">🛕</div>
+                                        </div>
+                                        <p style="font-size: 0.85rem; color: #388e3c; margin-top: 1rem;">नदी किनार, चिया पसल, दरबार क्षेत्र</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1976d2;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                <h3 style="margin: 0;">1. Making Suggestions (Pitching the Plan)</h3>
+                            </div>
+                            <p>In English, you usually ask a question: "Do you want to go?" In Nepali, we just state the action and soften it with a little hook at the end. The magic word here is <strong><span class="nepali-font">जाऔँ</span> (Jaau)</strong>, which means "Let's go."</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आज मौसम कस्तो राम्रो छ, कतै जाऔँ न?</span> (Aaja mausam kasto ramro cha, katai jaau na?)</strong><br>
+                                    <em>Meaning: It’s such a nice day, shall we go somewhere?</em>
+                                </li>
+                            </ul>
+
+                            <div style="background: #fff3e0; border-left: 4px solid #ff9800; padding: 1rem; border-radius: 4px; margin: 1.5rem 0;">
+                                <strong>The Secret Weapon:</strong> That little "न" (na) at the end. It turns a command into a gentle nudge. If you drop the "na", it sounds like an order.
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">चिया खान बाहिर जाऔँ?</span> (Chiya khaan bahira jaau?)</strong><br>
+                                    <em>Meaning: Shall we go out for tea? (This is the most common invitation in the country).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म त भन्छु, डाँडातिर जाऔँ।</span> (Ma ta bhanchu, dandatir jaau.)</strong><br>
+                                    <em>Meaning: I say we head to the hills. (Very natural among young people pitching a hike).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">भोलि बिहान शिवपुरी हाइकिङ जाऔँ?</span> (Bholi bihana Shivapuri hiking jaau?)</strong><br>
+                                    <em>Meaning: Shall we go hiking in Shivapuri tomorrow morning?</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <h3 style="margin: 0;">2. Accepting the Plan (Saying Yes)</h3>
+                            </div>
+                            <p>If the plan is good, you don't need to overcomplicate it. Keep it punchy.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हुन्छ।</span> (Huncha.)</strong><br>
+                                    <em>Meaning: Okay. / Sounds good. (This is the most versatile word in the Nepali language. It just means "Yes, it happens" or "I agree").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ठिक छ।</span> (Thik cha.)</strong><br>
+                                    <em>Meaning: Fine. / Alright.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म इन छु।</span> (Ma in chu.)</strong><br>
+                                    <em>Meaning: I’m in. (Urban youth mix English constantly. This is 100% normal Kathmandu street talk).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">जाने हो भने म पनि आउँछु।</span> (Jane ho bhane ma pani aauchu.)</strong><br>
+                                    <em>Meaning: If you guys are going, I’ll come too.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="margin: 2rem 0; display: flex; justify-content: center; align-items: center; position: relative; height: 350px; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color);">
+                                <svg width="100%" height="100%" viewBox="0 0 500 350" style="max-width: 500px;">
+                                    <!-- West Panel -->
+                                    <rect x="20" y="20" width="220" height="310" rx="8" fill="#fff" stroke="#d1d5db" stroke-width="2" />
+                                    <text x="130" y="50" text-anchor="middle" fill="#374151" font-weight="bold" font-size="16" font-family="sans-serif">West</text>
+                                    
+                                    <rect x="40" y="80" width="180" height="60" rx="8" fill="#ffebee" stroke="#ef5350" stroke-width="2" />
+                                    <text x="130" y="110" text-anchor="middle" fill="#c62828" font-size="14" font-family="sans-serif">"I don't want to go"</text>
+                                    
+                                    <line x1="130" y1="140" x2="130" y2="180" stroke="#9ca3af" stroke-width="2" />
+                                    <polygon points="125,175 135,175 130,185" fill="#9ca3af" />
+                                    
+                                    <rect x="40" y="185" width="180" height="60" rx="8" fill="#f3e5f5" stroke="#ab47bc" stroke-width="2" />
+                                    <text x="130" y="215" text-anchor="middle" fill="#6a1b9a" font-weight="bold" font-size="14" font-family="sans-serif">Direct Rejection</text>
+                                    <text x="130" y="235" text-anchor="middle" fill="#7b1fa2" font-size="12" font-family="sans-serif">(Blames self)</text>
+
+                                    <!-- Nepal Panel -->
+                                    <rect x="260" y="20" width="220" height="310" rx="8" fill="#fff" stroke="#d1d5db" stroke-width="2" />
+                                    <text x="370" y="50" text-anchor="middle" fill="#374151" font-weight="bold" font-size="16" font-family="sans-serif">Nepal</text>
+                                    
+                                    <rect x="280" y="80" width="180" height="60" rx="8" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2" />
+                                    <text x="370" y="105" text-anchor="middle" fill="#2e7d32" font-size="12" font-family="sans-serif">"I want to go, but the</text>
+                                    <text x="370" y="125" text-anchor="middle" fill="#2e7d32" font-size="12" font-family="sans-serif">universe won't let me"</text>
+                                    
+                                    <line x1="370" y1="140" x2="370" y2="180" stroke="#9ca3af" stroke-width="2" />
+                                    <polygon points="365,175 375,175 370,185" fill="#9ca3af" />
+                                    
+                                    <rect x="280" y="185" width="180" height="60" rx="8" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2" />
+                                    <text x="370" y="215" text-anchor="middle" fill="#1565c0" font-weight="bold" font-size="14" font-family="sans-serif">Circumstantial Rejection</text>
+                                    <text x="370" y="235" text-anchor="middle" fill="#1976d2" font-size="12" font-family="sans-serif">(Blames circumstances)</text>
+                                </svg>
+                            </div>
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f44336;"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                <h3 style="margin: 0;">3. Rejecting the Plan (The Art of the Soft "No")</h3>
+                            </div>
+                            <p>This is the most important cultural lesson of the day. Nepalis hate rejecting people directly. Saying "I'm not going" (Ma janna) is considered incredibly rude, especially to an elder.</p>
+                            <p>Instead of saying "I don't want to," you shift the blame to the universe. You make it a matter of circumstance.</p>
+
+                            <h4 style="color: #374151; margin-top: 1.5rem;">The Casual "No" (With Friends):</h4>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आज त मन छैन यार।</span> (Aaja ta man chaina yaar.)</strong><br>
+                                    <em>Meaning: Not in the mood today, man. (Only use this with close friends who won't get offended).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म त पास।</span> (Ma ta pass.)</strong><br>
+                                    <em>Meaning: I'll pass.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">जाने मुड छैन।</span> (Jane mood chaina.)</strong><br>
+                                    <em>Meaning: Not in the mood to go.</em>
+                                </li>
+                            </ul>
+
+                            <h4 style="color: #374151; margin-top: 1.5rem;">The Polite "No" (The Circumstantial Blame):</h4>
+                            <p>If you are talking to an elder, a colleague, or an acquaintance, you must give a circumstantial excuse. You cannot just say "No."</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">सायद म आउन सक्दिनँ।</span> (Sayad ma aauna sakdina.)</strong><br>
+                                    <em>Meaning: Maybe I can’t come. (Adding "maybe" softens the blow of a hard no).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आज समय मिलेन।</span> (Aaja samaya milena.)</strong><br>
+                                    <em>Meaning: The timing didn't work out today. (Literally: "Time didn't match." Notice how it's time's fault, not your fault).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अर्को पटक जाऔँला।</span> (Arko patak jaaula.)</strong><br>
+                                    <em>Meaning: Let’s go another time.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">माफ गर्नुहोस्, म आउन सक्दिनँ।</span> (Maaf garnuhos, ma aauna sakdina.)</strong><br>
+                                    <em>Meaning: I’m sorry, I won’t be able to make it. (Very formal. Use it for weddings or professional meetings).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <h3>The Cultural Insight: Always Have an Excuse Ready</h3>
+                            <p>Culturally, saying "No" without a reason leaves the other person hanging. You always tack on a tiny excuse to protect their feelings.</p>
+                            
+                            <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #1976d2; margin: 1.5rem 0;">
+                                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                                    <li style="margin-bottom: 0.5rem;"><strong>"म आउन सक्दिनँ, काम छ।"</strong> (I can't come, I have work.)</li>
+                                    <li><strong>"आज सम्भव छैन, घरमा काम छ।"</strong> (It's not possible today, there is work at home.)</li>
+                                </ul>
+                            </div>
+                            
+                            <p>Master the circumstantial "No," and you will navigate Nepali social life without ever stepping on a landmine.</p>
+                        `
+                    },
+                    { 
+                        id: "lesson-08", 
+                        title: "08 Saying thank you",
+                        content: `
+                            <h2>08 Thanking & Responding (How to Not Sound Like a Soap Opera)</h2>
+                            <p>Here’s the deal with gratitude in Nepal: people are incredibly helpful, but we do not make a massive, dramatic deal out of it.</p>
+                            <p>If you try to directly translate English phrases like "I owe you one" or "You're welcome" into formal Nepali, you end up sounding like a character in a 1990s drama. We keep it brief, we mix in English, and above all, we downplay the favor. Humility is the name of the game.</p>
+                            <p>Here is how you handle the exchange.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                                <h3 style="margin: 0;">1. Saying Thank You (The Core Basics)</h3>
+                            </div>
+                            <p>You only really need one Nepali word for this, and it just scales up depending on how much you mean it.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">धन्यवाद।</span> (Dhanyabad.)</strong><br>
+                                    <em>Meaning: Thank you. / Thanks. (The baseline word. Your tone dictates whether it’s a quick "thanks" to a shopkeeper or a genuine "thank you" to a friend).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">धेरै धन्यवाद।</span> (Dherai dhanyabad.)</strong><br>
+                                    <em>Meaning: Thanks a lot.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">एकदम धेरै धन्यवाद।</span> (Ekdam dherai dhanyabad.)</strong><br>
+                                    <em>Meaning: Thank you so much.</em>
+                                </li>
+                            </ul>
+
+                            <div style="background: #ffebee; border-left: 4px solid #f44336; padding: 1rem; border-radius: 4px; margin: 1.5rem 0;">
+                                <strong style="color: #d32f2f;">The Reality Check on "Appreciation":</strong><br>
+                                Textbooks will tell you to say <em>Ma sacho ma kadar garchu</em> (I truly appreciate it). Do not say this. It sounds incredibly robotic. If someone genuinely helps you out, use Nepanglish:<br><br>
+                                <strong><span class="nepali-font">धेरै हेल्प भयो।</span> (Dherai help bhayo.)</strong><br>
+                                <em>Meaning: That was a lot of help. (This is 10x more natural).</em>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                                <h3 style="margin: 0;">2. Casual & Modern Gratitude (Street Level)</h3>
+                            </div>
+                            <p>When you are with your buddies, you drop the formalities.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong>Thanks / Thank you.</strong><br>
+                                    <em>The Reality: Yes, we just use the English words. If a friend buys you a coffee, you just say "Thanks, man."</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">धेरै राम्रो गर्नुभयो।</span> (Dherai ramro garnu bhayo.)</strong><br>
+                                    <em>Meaning: That’s very kind of you. (Literally: You did a very good thing. Use this with elders who go out of their way for you).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मेरो एउटा उधारो रह्यो है।</span> (Mero euta udharo rahyo hai.)</strong><br>
+                                    <em>Meaning: I owe you one. (This is the natural, playful street version. Don't use the literal translation Ma timro rin ma chu unless you want to sound like you are legally indebted to a loan shark).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">बोलाउनु भएकोमा धन्यवाद।</span> (Bolaunu bhayeko ma dhanyabad.)</strong><br>
+                                    <em>Meaning: Thanks for having me. (Respectful. Use this when leaving someone's house after a dinner party).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1976d2;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M21 15V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z"/></svg>
+                                <h3 style="margin: 0;">3. Responding to Thanks (The "Kei Hoina" Reflex)</h3>
+                            </div>
+                            <p>This is where foreigners mess up the most. If you look up "You're welcome" in a dictionary, it will say <strong><span class="nepali-font">स्वागत छ</span> (Swagat cha)</strong>.</p>
+                            <p>Burn that phrase right now. In real life, <em>Swagat cha</em> means "Welcome to my house/shop." If you hand someone a pen, they say "Thank you," and you reply "Welcome to my house," you are going to look insane.</p>
+                            <p>Here is how we actually respond: we brush it off.</p>
+
+                            <div style="margin: 2rem 0; display: flex; justify-content: center; align-items: center; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color);">
+                                <div style="display: flex; align-items: center; gap: 1rem; width: 100%; max-width: 500px;">
+                                    <div style="flex: 1; background: #e8f5e9; border: 2px solid #81c784; border-radius: 8px; padding: 1.5rem; text-align: center;">
+                                        <strong style="color: #2e7d32; font-size: 1.2rem;"><span class="nepali-font">धन्यवाद</span><br>(Dhanyabad)</strong>
+                                        <div style="font-size: 0.85rem; color: #388e3c; margin-top: 0.5rem;">Thank You</div>
+                                    </div>
+                                    
+                                    <div style="display: flex; flex-direction: column; align-items: center; color: #9ca3af;">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                        <span style="font-size: 0.75rem; margin-top: 4px;">Deflect</span>
+                                    </div>
+
+                                    <div style="flex: 1; background: #e3f2fd; border: 2px solid #64b5f6; border-radius: 8px; padding: 1.5rem; text-align: center;">
+                                        <strong style="color: #1565c0; font-size: 1.2rem;"><span class="nepali-font">केही होइन</span><br>(Kei hoina)</strong>
+                                        <div style="font-size: 0.85rem; color: #1976d2; margin-top: 0.5rem;">It's Nothing</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">केही होइन।</span> (Kei hoina.)</strong><br>
+                                    <em>Meaning: It’s nothing. (This is your absolute go-to. It is the true Nepali equivalent of "You're welcome").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">केही छैन।</span> (Kei chaina.)</strong><br>
+                                    <em>Meaning: No problem.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">केही होइन, सानो कुरा हो।</span> (Kei hoina, sano kura ho.)</strong><br>
+                                    <em>Meaning: Don’t mention it, it’s a small thing.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">चिन्ता नगर्नुस्।</span> (Chinta nagarnus.)</strong><br>
+                                    <em>Meaning: No worries. / Don't worry about it. (Respectful).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9c27b0;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <h3 style="margin: 0;">4. The Compliment Exchange</h3>
+                            </div>
+                            <p>When someone compliments you, don't get a big head about it. Acknowledge it, and fire one right back.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">राम्रो देखिनुभयो।</span> (Ramro dekhinu bhayo.)</strong><br>
+                                    <em>Meaning: You’re looking well. (Respectful).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">धन्यवाद, तपाईँ पनि।</span> (Dhanyabad, tapai pani.)</strong><br>
+                                    <em>Meaning: Thanks, so are you.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <h3>The Cultural Insight: The Art of Deflection</h3>
+                            <p>In the West, accepting a "Thank You" with a "You're welcome" implies an even transaction. You did a good deed, and you are taking credit for it.</p>
+                            <p>In Nepal, humility is the core social currency. We actively downplay our help. When someone thanks you, your job is to convince them that it was no effort at all.</p>
+                            
+                            <div style="background: #f3e5f5; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #9c27b0; margin: 1.5rem 0; font-style: italic; color: #6a1b9a;">
+                                "It's nothing." "Small thing." "No problem."
+                            </div>
+                            
+                            <p>If you master the art of saying <strong><span class="nepali-font">केही होइन</span> (Kei hoina)</strong> with a warm smile, people will instantly respect your vibe.</p>
+                        `
+                    },
+                    { 
+                        id: "lesson-09", 
+                        title: "09 Saying sorry",
+                        content: `
+                            <h2>09 Apologies & Sympathy (Owning Your Mistakes)</h2>
+                            <p>Eventually, you are going to mess up. You’ll step on someone’s foot, forget a meeting, or say the wrong thing.</p>
+                            <p>When that happens, you need to know how to backpedal. But more importantly, you need to know how to react when someone shares bad news with you. Western culture treats sympathy differently than Nepali culture, and if you just directly translate English phrases, you are going to sound extremely robotic during an emotional moment.</p>
+                            <p>Let’s break down the spectrum from "Oops" to actual grief.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                <h3 style="margin: 0;">1. The Casual "My Bad" (Street Level)</h3>
+                            </div>
+                            <p>If you bump into someone at a cafe or forget to text a friend back, do not drop a heavy, formal apology. Keep it light.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ए, सरी है।</span> (Ae, sorry hai.)</strong><br>
+                                    <em>Meaning: Oops, sorry. (The "hai" at the end softens it. This is the most common apology in Kathmandu).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मेरो गल्ती।</span> (Mero galti.)</strong><br>
+                                    <em>Meaning: My bad. / My mistake.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मैले बिगारेँ।</span> (Maile bigare.)</strong><br>
+                                    <em>Meaning: I messed up. (Literally: I ruined it. Used when you make a mistake on a project or a plan).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">केही छैन।</span> (Kei chaina.)</strong><br>
+                                    <em>Meaning: No worries. (How you respond when someone drops a casual sorry).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f44336;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <h3 style="margin: 0;">2. Sincere Apologies (When You Actually Screw Up)</h3>
+                            </div>
+                            <p>When you genuinely cross a line, inconvenience someone heavily, or need to apologize to an elder or boss, you shift gears.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म साँचिकै माफी चाहन्छु।</span> (Ma sachikai maafi chahanchu.)</strong><br>
+                                    <em>Meaning: I am genuinely sorry. (Formal and heavy).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">साँच्चै नै सरी।</span> (Sachi nai sorry.)</strong><br>
+                                    <em>Meaning: I’m really sorry. (The natural, modern way to say it to a peer).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">दुःख दिएकोमा माफी।</span> (Dukha diyeko ma maafi.)</strong><br>
+                                    <em>Meaning: Sorry to bother you. (Literally: Apologies for giving you sorrow. This is highly respectful when interrupting an elder or asking for a massive favor).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मलाई नराम्रो लागिरहेको छ।</span> (Malai naramro lagirako cha.)</strong><br>
+                                    <em>Meaning: I feel awful. (Literally: I am feeling bad about it).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                                <h3 style="margin: 0;">3. Accepting the Apology (Letting It Go)</h3>
+                            </div>
+                            <p>If someone is apologizing to you, you don't say you're happy to help—you just tell them to drop it.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ठिक छ।</span> (Thik cha.)</strong><br>
+                                    <em>Meaning: It’s okay. / Fine.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ठुलो कुरा होइन।</span> (Thulo kura hoina.)</strong><br>
+                                    <em>Meaning: No big deal. (Literally: Not a big thing).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">माफी माग्नु पर्दैन।</span> (Maafi magnu pardaina.)</strong><br>
+                                    <em>Meaning: You don’t have to apologize.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="margin: 2rem 0; display: flex; justify-content: center; align-items: center; position: relative; height: 300px; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color);">
+                                <svg width="100%" height="100%" viewBox="0 0 500 300" style="max-width: 500px;">
+                                    <!-- English Mindset -->
+                                    <rect x="30" y="40" width="200" height="220" rx="8" fill="#fff" stroke="#d1d5db" stroke-width="2" />
+                                    <text x="130" y="75" text-anchor="middle" fill="#374151" font-weight="bold" font-size="16" font-family="sans-serif">English Mindset</text>
+                                    
+                                    <rect x="50" y="110" width="160" height="60" rx="8" fill="#ffebee" stroke="#ef5350" stroke-width="2" />
+                                    <text x="130" y="145" text-anchor="middle" fill="#c62828" font-size="14" font-family="sans-serif">"I am sorry this</text>
+                                    <text x="130" y="165" text-anchor="middle" fill="#c62828" font-size="14" font-family="sans-serif">happened to you"</text>
+                                    
+                                    <text x="130" y="210" text-anchor="middle" fill="#7b1fa2" font-size="12" font-family="sans-serif" font-style="italic">Focus: Apology</text>
+                                    <text x="130" y="230" text-anchor="middle" fill="#7b1fa2" font-size="12" font-family="sans-serif" font-style="italic">(Implies fault)</text>
+
+                                    <!-- Nepali Mindset -->
+                                    <rect x="270" y="40" width="200" height="220" rx="8" fill="#fff" stroke="#d1d5db" stroke-width="2" />
+                                    <text x="370" y="75" text-anchor="middle" fill="#374151" font-weight="bold" font-size="16" font-family="sans-serif">Nepali Mindset</text>
+                                    
+                                    <rect x="290" y="110" width="160" height="60" rx="8" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2" />
+                                    <text x="370" y="145" text-anchor="middle" fill="#2e7d32" font-size="14" font-family="sans-serif">"Hearing this</text>
+                                    <text x="370" y="165" text-anchor="middle" fill="#2e7d32" font-size="14" font-family="sans-serif">makes me sad"</text>
+                                    
+                                    <text x="370" y="210" text-anchor="middle" fill="#1565c0" font-size="12" font-family="sans-serif" font-style="italic">Focus: Shared Sadness</text>
+                                    <text x="370" y="230" text-anchor="middle" fill="#1565c0" font-size="12" font-family="sans-serif" font-style="italic">(No fault implied)</text>
+
+                                    <!-- VS Circle -->
+                                    <circle cx="250" cy="150" r="20" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2" />
+                                    <text x="250" y="155" text-anchor="middle" fill="#4b5563" font-weight="bold" font-size="14" font-family="sans-serif">VS</text>
+                                </svg>
+                            </div>
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1976d2;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <h3 style="margin: 0;">4. Expressing Sympathy (The Human Connection)</h3>
+                            </div>
+                            <p>Here is the biggest cultural trap: In English, if someone tells you their dog died or they ended up in the hospital, you say, "I'm so sorry."</p>
+                            <p>Do not say "Sorry" for this in Nepali. "Sorry" (or Maafi) implies you caused the problem. If you say "Sorry" when someone’s relative dies, it sounds like you murdered them.</p>
+                            <p>Instead of apologizing for the universe, Nepali culture expresses shared sadness.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अस्पतालमा हुनुहुन्थ्यो भन्ने सुनेर दुःख लाग्यो।</span> (Hospital ma hunuhunthyo bhanne sunera dukha lagyo.)</strong><br>
+                                    <em>Meaning: I’m sorry to hear you were in the hospital. (Literally: Hearing you were in the hospital, sadness was felt).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">एकदम दुःख लाग्यो।</span> (Ekdam dukha lagyo.)</strong><br>
+                                    <em>Meaning: I am so sorry for your loss / I am so sorry to hear that. (Literally: Extreme sadness was felt. This is your bulletproof, universally respectful response to any tragedy).</em>
+                                </li>
+                            </ul>
+
+                            <h4 style="color: #374151; margin-top: 1.5rem;">The "It Is What It Is" Reflex:</h4>
+                            <p>When you express sympathy, the other person will rarely say "I appreciate that" (which sounds very corporate). They will usually accept the reality of the situation with a very specific, beautiful Nepali phrase:</p>
+                            
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">के गर्ने...</span> (Ke garne...)</strong><br>
+                                    <em>Meaning: What to do... / It is what it is.</em>
+                                </li>
+                            </ul>
+
+                            <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #1976d2; margin: 1.5rem 0;">
+                                <strong style="color: #1565c0;">The Full Exchange:</strong><br><br>
+                                <strong>Them:</strong> "My grandfather passed away."<br>
+                                <strong>You:</strong> "Oh ho... ekdam dukha lagyo." <em>(Oh man... I feel extreme sadness.)</em><br>
+                                <strong>Them:</strong> "Hajur. Ke garne..." <em>(Yes. What to do...)</em>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <h3>The Cultural Insight: Shared Humanity</h3>
+                            <p>Nepali sympathy isn't about perfectly crafted PR statements. It’s simple, direct, and human. We don't try to fix the problem with words. We just say <strong>"Dukha lagyo"</strong> to let them know we are carrying a piece of their sadness with them.</p>
+                        `
+                    },
+                    { 
+                        id: "lesson-10", 
+                        title: "10 Saying goodbye",
+                        content: `
+                            <h2>10 The Nepali Goodbye (Why Leaving Takes 20 Minutes)</h2>
+                            <p>In the West, you can pull an "Irish Goodbye"—you just pay your tab, stand up, and disappear into the night.</p>
+                            <p>Do not try that in Nepal. A Nepali goodbye is not an action; it is an entire social event. It is slow, warm, and highly interactive. You repeat yourself, you walk together, and you always add one last thought at the door.</p>
+                            <p>Here is how you successfully execute the exit without sounding like a corporate robot or a rude tourist.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); overflow-x: auto;">
+                                <h4 style="margin-top: 0; margin-bottom: 1.5rem; color: #374151; text-align: center;">The Goodbye Timeline</h4>
+                                <svg width="600" height="160" viewBox="0 0 600 160" style="display: block; margin: 0 auto;">
+                                    <!-- Western Exit -->
+                                    <text x="10" y="30" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Western Exit (5 sec)</text>
+                                    <line x1="160" y1="25" x2="580" y2="25" stroke="#e5e7eb" stroke-width="8" stroke-linecap="round" />
+                                    <line x1="160" y1="25" x2="220" y2="25" stroke="#ef4444" stroke-width="8" stroke-linecap="round" />
+                                    <circle cx="160" cy="25" r="6" fill="#b91c1c" />
+                                    <text x="160" y="50" text-anchor="middle" fill="#ef4444" font-size="12" font-family="sans-serif">Say Bye</text>
+                                    <circle cx="220" cy="25" r="6" fill="#b91c1c" />
+                                    <text x="220" y="50" text-anchor="middle" fill="#ef4444" font-size="12" font-family="sans-serif">Leave</text>
+
+                                    <!-- Nepali Exit -->
+                                    <text x="10" y="100" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Nepali Exit (20 min)</text>
+                                    <line x1="160" y1="95" x2="580" y2="95" stroke="#e5e7eb" stroke-width="8" stroke-linecap="round" />
+                                    <line x1="160" y1="95" x2="580" y2="95" stroke="#10b981" stroke-width="8" stroke-linecap="round" />
+                                    
+                                    <circle cx="160" cy="95" r="6" fill="#047857" />
+                                    <text x="160" y="120" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">Say Bye</text>
+                                    
+                                    <circle cx="230" cy="95" r="6" fill="#047857" />
+                                    <text x="230" y="135" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">Keep talking</text>
+                                    
+                                    <circle cx="300" cy="95" r="6" fill="#047857" />
+                                    <text x="300" y="120" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">Stand up</text>
+                                    
+                                    <circle cx="370" cy="95" r="6" fill="#047857" />
+                                    <text x="370" y="135" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">Talk at door</text>
+                                    
+                                    <circle cx="440" cy="95" r="6" fill="#047857" />
+                                    <text x="440" y="120" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">Walk to gate</text>
+                                    
+                                    <circle cx="510" cy="95" r="6" fill="#047857" />
+                                    <text x="510" y="135" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">One last story</text>
+                                    
+                                    <circle cx="580" cy="95" r="6" fill="#047857" />
+                                    <text x="580" y="120" text-anchor="middle" fill="#10b981" font-size="11" font-family="sans-serif">Final wave</text>
+                                </svg>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                                <h3 style="margin: 0;">1. The Street-Level Exit (Friends & Casual)</h3>
+                            </div>
+                            <p>When you are hanging out with friends, you don't need heavy formalities. You just announce your departure and use the magic word: <strong><span class="nepali-font">भेटौँला</span> (Bhetamla)</strong> (We will meet).</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ल, म हिँड्छु।</span> (La, ma hidchu.)</strong><br>
+                                    <em>Meaning: Alright, I’m heading out. (Literally: "Okay, I walk." This is the undisputed champion of casual goodbyes).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म लागेँ।</span> (Ma lage.)</strong><br>
+                                    <em>Meaning: I’m off. / I'm out. (Very natural, very common in Kathmandu).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">भेटौँला।</span> (Bhetamla.)</strong><br>
+                                    <em>Meaning: See ya. / We will meet. (This is your anchor word. Always throw this in).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मङ्गलबार भेटौँला।</span> (Mangalbar bhetamla.)</strong><br>
+                                    <em>Meaning: See you Tuesday.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">पछि भेटौँला।</span> (Pachi bhetamla.)</strong><br>
+                                    <em>Meaning: Catch you later. / See you later.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1976d2;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M21 15V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z"/></svg>
+                                <h3 style="margin: 0;">2. The Formal Exit (Elders & Professionals)</h3>
+                            </div>
+                            <p>When you are leaving a meeting, finishing a transaction, or saying goodbye to someone's parents, you shift gears.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">नमस्ते।</span> (Namaste.)</strong><br>
+                                    <em>Meaning: Goodbye. (Yes, Namaste is a bookend. You use it to open the conversation, and you use it to close it).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तपाईँलाई भेट्न पाउँदा खुसी लाग्यो।</span> (Tapailai bhetna pauda khusi lagyo.)</strong><br>
+                                    <em>Meaning: It was a pleasure meeting you.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">फेरि भेटौँ है।</span> (Feri bhetau hai.)</strong><br>
+                                    <em>Meaning: Let's meet again. (Reality Check: I cut "Feri bhetne asha cha" from your notes because it sounds like a tragic love letter. Use this instead—it’s much more natural).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">राम्रोसँग जानु।</span> (Ramro sanga janu.) / <span class="nepali-font">सेफल्ली जानु।</span> (Safely janu.)</strong><br>
+                                    <em>Meaning: Have a safe trip. / Go safely. (If someone is leaving your house or table, you always tell them to go safely).</em>
+                                </li>
+                            </ul>
+
+                            <div style="background: #ffebee; border-left: 4px solid #f44336; padding: 1rem; border-radius: 4px; margin: 1.5rem 0;">
+                                <strong style="color: #d32f2f;">The Corporate Warning:</strong><br>
+                                Textbooks will tell you to say <em>तपाईँको समयको लागि धन्यवाद</em> (Tapai ko samay ko lagi dhanyabad - Thank you for your time). Do not say this unless you just finished a massive B2B software pitch to a bank manager. If you say this to a normal person, it sounds incredibly cold and transactional.
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <h3 style="margin: 0;">3. Making the Escape (When You Actually Have to Run)</h3>
+                            </div>
+                            <p>Sometimes you actually are in a hurry and need to cut the 20-minute goodbye short. Here is how you do it without being rude.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म अब हिँड्न पर्यो।</span> (Ma aba hidna paryo.)</strong><br>
+                                    <em>Meaning: I’ve got to run. (Literally: I must walk now).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">धेरै पछि भेट्न पाउँदा राम्रो लाग्यो।</span> (Dherai pachi bhetna pauda ramro lagyo.)</strong><br>
+                                    <em>Meaning: Great to catch up. (Literally: It felt good to meet after a long time).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">पक्का त्यहीँ भेटौँला।</span> (Pakka tyahi bhetamla.)</strong><br>
+                                    <em>Meaning: Definitely catch you then. (Use this to lock in a future plan right before you walk away).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">फेरि कहिले गरौँ।</span> (Feri kahile garam.)</strong><br>
+                                    <em>Meaning: Let’s do this again sometime.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <h3>The Cultural Insight: The Art of Leaving</h3>
+                            <p>In Nepal, leaving abruptly means you didn't enjoy the company. The slower the goodbye, the warmer the relationship.</p>
+                            <p>When you decide to leave a house or a cafe, you don't just stand up and walk away. You announce the intention to leave ("La, ma hidchu"). Then, you sit there for another two minutes. Then you stand up. Then you walk to the door together. Then you stand at the door and talk about one more completely random topic.</p>
+                            <p>It’s not just a goodbye; it's a decompression phase. Embrace it. It’s where some of the best conversations happen.</p>
+                        `
+                    },
+                    { 
+                        id: "lesson-11", 
+                        title: "11 Dates, time, and weather",
+                        content: `
+                            <h2>11 Time, Dates & Weather (The Survival Matrix)</h2>
+                            <p>Let’s get highly practical. You need to know when things happen, what day it is, and whether you need an umbrella before you leave the house.</p>
+                            <p>Here is everything you need to navigate time and the elements in Nepal.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #1976d2;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                <h3 style="margin: 0;">1. The Calendar (Living in the Future)</h3>
+                            </div>
+                            <p>Nepal officially runs on the Bikram Sambat (B.S.) calendar, which is roughly 56.7 years ahead of the global Gregorian calendar. If you look at an official government document or a local newspaper, the year will look like you’ve time-traveled.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); overflow-x: auto;">
+                                <svg width="600" height="120" viewBox="0 0 600 120" style="display: block; margin: 0 auto;">
+                                    <!-- Gregorian Timeline -->
+                                    <text x="10" y="30" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Gregorian (A.D.)</text>
+                                    <line x1="140" y1="25" x2="580" y2="25" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" />
+                                    <circle cx="360" cy="25" r="6" fill="#1d4ed8" />
+                                    <text x="360" y="50" text-anchor="middle" fill="#2563eb" font-weight="bold" font-size="14" font-family="sans-serif">2026</text>
+
+                                    <!-- Bikram Sambat Timeline -->
+                                    <text x="10" y="90" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Bikram Sambat (B.S.)</text>
+                                    <line x1="140" y1="85" x2="580" y2="85" stroke="#10b981" stroke-width="4" stroke-linecap="round" />
+                                    <circle cx="360" cy="85" r="6" fill="#047857" />
+                                    <text x="360" y="110" text-anchor="middle" fill="#059669" font-weight="bold" font-size="14" font-family="sans-serif">2082 / 2083</text>
+
+                                    <!-- Connection Line -->
+                                    <line x1="360" y1="35" x2="360" y2="75" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4" />
+                                    <text x="370" y="60" fill="#6b7280" font-size="12" font-family="sans-serif" font-style="italic">+ ~56.7 Years</text>
+                                </svg>
+                            </div>
+
+                            <div style="background: #e3f2fd; border-left: 4px solid #1976d2; padding: 1rem; border-radius: 4px; margin: 1.5rem 0;">
+                                <strong style="color: #1565c0;">The Reality Check:</strong> You do not need to memorize the B.S. calendar to survive. In daily life, business, and casual conversation, people use the English calendar constantly. You can safely rely on it.
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <h3 style="margin: 0;">2. The Days of the Week (The Sunday Trap)</h3>
+                            </div>
+                            <p>Here is the biggest culture shock for Westerners: <strong>Saturday is the weekend. Singular.</strong> Sunday is a normal working day. Do not try to make plans on a Sunday morning assuming people are free.</p>
+
+                            <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <li style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">आइतबार</span> (Aitabar)</strong><br>
+                                    <em>Sunday</em>
+                                </li>
+                                <li style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">सोमबार</span> (Sombar)</strong><br>
+                                    <em>Monday</em>
+                                </li>
+                                <li style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">मङ्गलबार</span> (Mangalbar)</strong><br>
+                                    <em>Tuesday</em>
+                                </li>
+                                <li style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">बुधबार</span> (Budhabar)</strong><br>
+                                    <em>Wednesday</em>
+                                </li>
+                                <li style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">बिहीबार</span> (Bihibar)</strong><br>
+                                    <em>Thursday</em>
+                                </li>
+                                <li style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">शुक्रबार</span> (Shukrabar)</strong><br>
+                                    <em>Friday</em>
+                                </li>
+                                <li style="background: #e8f5e9; padding: 1rem; border-radius: 8px; border-left: 4px solid #4caf50;">
+                                    <strong><span class="nepali-font">शनिबार</span> (Sanibar)</strong><br>
+                                    <em style="color: #2e7d32; font-weight: bold;">Saturday (Day Off)</em>
+                                </li>
+                            </ul>
+
+                            <p style="margin-top: 1.5rem;"><strong>Example:</strong> <span class="nepali-font">सोमबार भेटौँला।</span> (Sombar bhetamla.) = See you Monday.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9c27b0;"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                                <h3 style="margin: 0;">3. Basic Time Words (The Anchors)</h3>
+                            </div>
+                            <p>These are the core vocabulary blocks you will use every single day.</p>
+
+                            <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">आज</span> (Aaja)</strong> = Today
+                                </li>
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">हिजो</span> (Hijo)</strong> = Yesterday
+                                </li>
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">भोलि</span> (Bholi)</strong> = Tomorrow
+                                </li>
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">हप्ता</span> (Hapta)</strong> = Week
+                                </li>
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">महिना</span> (Mahina)</strong> = Month
+                                </li>
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">वर्ष</span> (Barsha)</strong> = Year
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f44336;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <h3 style="margin: 0;">4. Telling Time (The Street Hacks)</h3>
+                            </div>
+                            <p>Your textbook will tell you to say things like <em>Ek baje 15 minute</em> (1 hour and 15 minutes). Nobody actually talks like this. It takes too long.</p>
+                            <p>In Nepal, we chop the clock into quarters and halves. If you learn these three words, you will master Nepali time:</p>
+
+                            <div style="margin: 2rem 0; display: flex; justify-content: center; align-items: center; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color);">
+                                <svg width="300" height="300" viewBox="0 0 300 300">
+                                    <!-- Clock Face -->
+                                    <circle cx="150" cy="150" r="140" fill="#fff" stroke="#d1d5db" stroke-width="4" />
+                                    
+                                    <!-- Center Dot -->
+                                    <circle cx="150" cy="150" r="6" fill="#374151" />
+                                    
+                                    <!-- Sawa (Quarter Past) - Green -->
+                                    <path d="M150,150 L150,10 A140,140 0 0,1 290,150 Z" fill="#e8f5e9" opacity="0.7" />
+                                    <line x1="150" y1="150" x2="290" y2="150" stroke="#4caf50" stroke-width="3" stroke-dasharray="4" />
+                                    <text x="220" y="80" text-anchor="middle" fill="#2e7d32" font-weight="bold" font-size="18" font-family="sans-serif">सवा (Sawa)</text>
+                                    <text x="220" y="100" text-anchor="middle" fill="#2e7d32" font-size="14" font-family="sans-serif">:15</text>
+
+                                    <!-- Sade (Half Past) - Blue -->
+                                    <path d="M150,150 L290,150 A140,140 0 0,1 150,290 Z" fill="#e3f2fd" opacity="0.7" />
+                                    <line x1="150" y1="150" x2="150" y2="290" stroke="#2196f3" stroke-width="3" stroke-dasharray="4" />
+                                    <text x="220" y="220" text-anchor="middle" fill="#1565c0" font-weight="bold" font-size="18" font-family="sans-serif">साढे (Sade)</text>
+                                    <text x="220" y="240" text-anchor="middle" fill="#1565c0" font-size="14" font-family="sans-serif">:30</text>
+
+                                    <!-- Paune (Quarter To) - Red -->
+                                    <path d="M150,150 L150,290 A140,140 0 0,1 10,150 Z" fill="#ffebee" opacity="0.7" />
+                                    <line x1="150" y1="150" x2="10" y2="150" stroke="#f44336" stroke-width="3" stroke-dasharray="4" />
+                                    <text x="80" y="220" text-anchor="middle" fill="#c62828" font-weight="bold" font-size="18" font-family="sans-serif">पौने (Paune)</text>
+                                    <text x="80" y="240" text-anchor="middle" fill="#c62828" font-size="14" font-family="sans-serif">:45</text>
+                                    
+                                    <!-- Empty Quarter -->
+                                    <path d="M150,150 L10,150 A140,140 0 0,1 150,10 Z" fill="#f3f4f6" opacity="0.5" />
+                                </svg>
+                            </div>
+
+                            <h4 style="color: #374151; margin-top: 1.5rem;">How it actually sounds:</h4>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">एक बजे</span> (Ek baje)</strong> = 1:00</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">सवा एक</span> (Sawa ek)</strong> = 1:15 (Quarter past one)</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">साढे एक</span> (Sade ek)</strong> = 1:30 (Half past one)</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">पौने दुई</span> (Paune dui)</strong> = 1:45 (Quarter to two. Notice it jumps to the next hour, just like in English).</li>
+                            </ul>
+
+                            <p style="margin-top: 1rem;"><strong>Example:</strong> <span class="nepali-font">कति बजे सुरु हुन्छ?</span> (Kati baje suru huncha?) = What time does it start?</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #009688;"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 21h5v-5"/></svg>
+                                <h3 style="margin: 0;">5. Frequency (How Often)</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">हप्तामा एक चोटी</span> (Hapta ma ek choti)</strong> = Once a week (choti = times)</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">हप्तामा दुई चोटी</span> (Hapta ma dui choti)</strong> = Twice a week</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">हरेक दिन</span> (Harek din)</strong> = Every day</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">हरेक महिना</span> (Harek mahina)</strong> = Every month</li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #03a9f4;"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                                <h3 style="margin: 0;">6. The Weather (The Simple Formula)</h3>
+                            </div>
+                            <p>Nepal’s weather is intense, but talking about it is incredibly simple. You don't need complex grammar. You just take the weather condition and add the word <strong><span class="nepali-font">छ</span> (cha)</strong>, which basically means "it is."</p>
+
+                            <div style="margin: 2rem 0; padding: 1.5rem; background: #e1f5fe; border-radius: 12px; border: 2px dashed #81d4fa; text-align: center;">
+                                <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                                    <div style="background: #fff; padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; color: #0288d1; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">[Weather Word]</div>
+                                    <div style="font-size: 1.5rem; font-weight: bold; color: #0288d1;">+</div>
+                                    <div style="background: #fff; padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; color: #0288d1; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><span class="nepali-font">छ</span> (Cha)</div>
+                                    <div style="font-size: 1.5rem; font-weight: bold; color: #0288d1;">=</div>
+                                    <div style="background: #0288d1; padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">It's happening</div>
+                                </div>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                                <li style="background: #fff3e0; padding: 1rem; border-radius: 8px; border-left: 4px solid #ff9800;">
+                                    <strong><span class="nepali-font">गर्मी छ</span> (Garmi cha)</strong> = It’s hot.
+                                </li>
+                                <li style="background: #e3f2fd; padding: 1rem; border-radius: 8px; border-left: 4px solid #2196f3;">
+                                    <strong><span class="nepali-font">जाडो छ</span> (Jado cha)</strong> = It’s cold.
+                                </li>
+                                <li style="background: #fff8e1; padding: 1rem; border-radius: 8px; border-left: 4px solid #ffc107;">
+                                    <strong><span class="nepali-font">घाम लागिरहेको छ</span> (Gham lagirako cha)</strong> = It’s sunny. (Literally: Sun is hitting).
+                                </li>
+                                <li style="background: #f5f5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">हावा चलिरहेको छ</span> (Hawa chalirako cha)</strong> = It’s windy. (Literally: Air is moving).
+                                </li>
+                                <li style="background: #e1f5fe; padding: 1rem; border-radius: 8px; border-left: 4px solid #03a9f4;">
+                                    <strong><span class="nepali-font">पानी परिरहेको छ</span> (Pani parirako cha)</strong> = It’s raining. (Literally: Water is falling).
+                                </li>
+                                <li style="background: #b3e5fc; padding: 1rem; border-radius: 8px; border-left: 4px solid #0288d1;">
+                                    <strong><span class="nepali-font">धेरै पानी परिरहेको छ</span> (Dherai pani parirako cha)</strong> = It’s pouring rain.
+                                </li>
+                                <li style="background: #eceff1; padding: 1rem; border-radius: 8px; border-left: 4px solid #607d8b;">
+                                    <strong><span class="nepali-font">हुस्सु लाग्यो</span> (Husshu lagyo)</strong> = It’s foggy.
+                                </li>
+                                <li style="background: #e8eaf6; padding: 1rem; border-radius: 8px; border-left: 4px solid #3f51b5;">
+                                    <strong><span class="nepali-font">हिउँ परिरहेको छ</span> (Hiu parirako cha)</strong> = It’s snowing.
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff5722;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                <h3 style="margin: 0;">7. Extreme Weather (Nature's Reality)</h3>
+                            </div>
+                            <p>Nepal is landlocked, so you don't have to worry about hurricanes or tsunamis. But the topography is wild, and during the monsoon, things get rough.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">आँधी</span> (Aandhi)</strong> = Storm</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">बाढी</span> (Badi)</strong> = Flood (Very common in the Terai region during monsoon).</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">तातो लहर</span> (Tato lahar)</strong> = Heatwave</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">खडेरी</span> (Khaderi)</strong> = Drought</li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #8bc34a;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <h3 style="margin: 0;">The Six Seasons (<span class="nepali-font">ऋतु</span> - Ritu)</h3>
+                            </div>
+                            <p>Western countries have four seasons. Because of Nepal's insane topography—ranging from flat jungles to the Himalayas—we traditionally divide the year into six distinct seasons, each lasting about two months.</p>
+
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+                                <div>
+                                    <h4 style="color: #e91e63; margin-bottom: 0.5rem;">1. Basanta Ritu (Spring) | Chaitra – Baisakh</h4>
+                                    <p style="margin-top: 0;">The rhododendrons bloom in the hills, the weather warms up, and the Nepali New Year hits. It is peak hiking season.</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #6b7280;">Street Phrase: <strong><span class="nepali-font">आज मौसम कस्तो राम्रो छ।</span> (Aaja mausam kasto ramro cha.)</strong> = The weather is so beautiful today.</p>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: #ff5722; margin-bottom: 0.5rem;">2. Grishma Ritu (Early Summer) | Jestha – Asar</h4>
+                                    <p style="margin-top: 0;">Dry, brutal heat, especially down in the Terai region. Farmers are sweating, prepping the fields for the rains.</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #6b7280;">Street Phrase: <strong><span class="nepali-font">बाहिर नजाऊ, गर्मीले मार्छ।</span> (Bahira najaau, garmi le marchha.)</strong> = Don't go outside, the heat will kill you.</p>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: #00bcd4; margin-bottom: 0.5rem;">3. Barsha Ritu (Monsoon) | Asar – Shrawan</h4>
+                                    <p style="margin-top: 0;">This is the lifeblood of the country. Moist winds from the Bay of Bengal slam into the Himalayas, rise, and dump heavy rain. Rivers swell, roads turn to mud, and the entire country plants rice. Asar 15 is a massive cultural day specifically dedicated to playing in the mud and planting rice (Dhan Ropai).</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #6b7280;">Street Phrase: <strong><span class="nepali-font">छाता नलिई नहिँड्नु।</span> (Chhata naliyee nahidnu.)</strong> = Don't walk without taking an umbrella.<br>
+                                    Street Phrase: <strong><span class="nepali-font">आज त खत्रा पानी पर्यो।</span> (Aaja ta khatra pani paryo.)</strong> = It rained crazy hard today.</p>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: #ff9800; margin-bottom: 0.5rem;">4. Sharad Ritu (Autumn) | Bhadra – Ashwin</h4>
+                                    <p style="margin-top: 0;">The rain stops. The sky is violently clear, the mountains are perfectly visible, and the biggest festivals kick off. This is the best time to be in Nepal.</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #6b7280;">Street Phrase: <strong><span class="nepali-font">आकाश कस्तो खुल्ला छ।</span> (Aakash kasto khulla cha.)</strong> = The sky is so clear.</p>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: #795548; margin-bottom: 0.5rem;">5. Hemanta Ritu (Pre-Winter) | Kartik – Mangsir</h4>
+                                    <p style="margin-top: 0;">Cool, dry weather. The harvest is brought in, and the mornings start getting crisp.</p>
+                                </div>
+
+                                <div>
+                                    <h4 style="color: #3f51b5; margin-bottom: 0.5rem;">6. Shishir Ritu (Winter) | Poush – Magh</h4>
+                                    <p style="margin-top: 0;">Bitter cold in the hills and mountains, and heavy, blinding fog (husshu) blankets the Terai.</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #6b7280;">Street Phrase: <strong><span class="nepali-font">कस्तो जाडो छ आज!</span> (Kasto jado cha aaja!)</strong> = It's so cold today!</p>
+                                </div>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #e91e63;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <h3 style="margin: 0;">The Chaos of Festivals (Why Nobody is at Work)</h3>
+                            </div>
+                            <p>Nepal has one of the highest numbers of public holidays in the world. Why? Because the country is hyper-diverse. Hindus, Buddhists, Muslims, Kirats, Christians, and dozens of distinct ethnic groups all share the same borders, and the government recognizes almost everyone's major holidays.</p>
+                            <p>Here are the heavy hitters you need to know, and what to say when they happen:</p>
+
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
+                                <div style="background: #fff0f5; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #e91e63;">
+                                    <h4 style="margin-top: 0; color: #c2185b;">Dashain (<span class="nepali-font">दशैँ</span>)</h4>
+                                    <p style="margin-top: 0;">The longest, biggest Hindu festival in Autumn. It celebrates the victory of good over evil. Families travel across the country to gather, and elders put red tika on the foreheads of the younger generation for blessings.</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #880e4f;">Phrase: <strong><span class="nepali-font">दशैँमा घर जाने हो?</span> (Dashain ma ghar jane ho?)</strong> = Are you going home for Dashain?<br>
+                                    Phrase: <strong><span class="nepali-font">टीका लाउन आउनु है।</span> (Tika launa aunu hai.)</strong> = Come over to put on tika.</p>
+                                </div>
+
+                                <div style="background: #fff8e1; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #ffc107;">
+                                    <h4 style="margin-top: 0; color: #ff8f00;">Tihar (<span class="nepali-font">तिहार</span>)</h4>
+                                    <p style="margin-top: 0;">The festival of lights (similar to Diwali). We worship crows, dogs, cows, and brothers. Kids go door-to-door singing Deusi-Bhailo (like Christmas caroling, but with more dancing and gambling).</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #ff6f00;">Phrase: <strong>ह्याप्पी तिहार! (Happy Tihar!)</strong><br>
+                                    Phrase: <strong><span class="nepali-font">देउसी रे!</span> (Deusi re!)</strong> = (The chant you yell while singing at people's houses).</p>
+                                </div>
+
+                                <div style="background: #ffebee; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #f44336;">
+                                    <h4 style="margin-top: 0; color: #d32f2f;">Teej (<span class="nepali-font">तीज</span>)</h4>
+                                    <p style="margin-top: 0;">A massive festival where women wear red saris, fast, dance in the streets, and pray to Lord Shiva.</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #b71c1c;">Phrase: <strong><span class="nepali-font">तीजको दर खाने हो?</span> (Teej ko dar khane ho?)</strong> = Are we eating the Teej feast? (The massive meal eaten right before the fasting begins).</p>
+                                </div>
+
+                                <div style="background: #e0f7fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #00bcd4;">
+                                    <h4 style="margin-top: 0; color: #0097a7;">Holi (<span class="nepali-font">होली</span>)</h4>
+                                    <p style="margin-top: 0;">The festival of colors in the Spring. Total chaos in the streets. Water balloons, colored powder, and day-drinking.</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #006064;">Phrase: <strong><span class="nepali-font">रङ नखेल्ने?</span> (Ranga nakhelne?)</strong> = You're not playing with colors?</p>
+                                </div>
+
+                                <div style="background: #f3e5f5; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <h4 style="margin-top: 0; color: #7b1fa2;">Buddha Jayanti & Losar</h4>
+                                    <p style="margin-top: 0;">Buddha's birthday, and the Tibetan/Himalayan New Year (celebrated heavily by Sherpa, Tamang, and Gurung communities).</p>
+                                    <p style="margin-top: 0; font-style: italic; color: #4a148c;">Phrase: <strong><span class="nepali-font">लोसारको शुभकामना।</span> (Losar ko shubhakamana.)</strong> = Happy Losar (Good wishes for Losar).</p>
+                                </div>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <h3>The Cultural Insight: The Calendar is the Culture</h3>
+                            <p>You can't separate the calendar from the culture. Autumn brings clear skies and Dashain. Monsoon brings mud and rice planting. Spring brings flowers and Holi colors. If you understand the cycle of the Ritu (seasons), you understand the exact mood of the entire country at any given moment.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+                                <h3 style="margin: 0;">Numbers, Money & The Math of the Streets</h3>
+                            </div>
+                            <p>If you can't do the math in Nepali, you can't survive. You won't be able to pay for a taxi, buy a coffee, or rent an apartment.</p>
+                            <p>But here is the catch: the Nepali number system does not work like the Western one. The way we group large numbers is different, the way we use fractions is completely unique, and if you try to speak exact, literal numbers all the time, you will sound like a calculator.</p>
+                            <p>Here is the complete street guide to numbers in Nepal.</p>
+
+                            <h4 style="color: #2e7d32; margin-top: 1.5rem;">1. The Basics (1 to 10)</h4>
+                            <p>Nepal uses Devanagari digits (० १ २ ३ ४ ५ ६ ७ ८ ९), but in modern Kathmandu, everyone mixes them with English digits. You will see both on menus and license plates.</p>
+                            
+                            <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem;">
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>०</strong> – शून्य (Shunya) / Zero</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>१</strong> – एक (Ek)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>२</strong> – दुई (Dui)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>३</strong> – तीन (Teen)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>४</strong> – चार (Char)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>५</strong> – पाँच (Panch)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>६</strong> – छ (Cha)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>७</strong> – सात (Saat)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>८</strong> – आठ (Aath)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>९</strong> – नौ (Nau)</li>
+                                <li style="background: #e8f5e9; padding: 0.75rem; border-radius: 8px; text-align: center;"><strong>१०</strong> – दस (Dus)</li>
+                            </ul>
+
+                            <div style="background: #fff3e0; border-left: 4px solid #ff9800; padding: 1rem; border-radius: 4px; margin: 1.5rem 0;">
+                                <strong style="color: #e65100;">Reality Check:</strong> After 10, the numbers don't follow a simple "twenty-one, twenty-two" pattern. They all have unique names up to 99. E.g., 11 is एघार (Eghar), 20 is बीस (Bees), 25 is पच्चीस (Pachis). You will have to memorize these over time, but for now, if you get stuck, just say the English number. Everyone understands "Twenty-five".
+                            </div>
+
+                            <h4 style="color: #1565c0; margin-top: 1.5rem;">2. The South Asian Comma System (Lakhs & Crores)</h4>
+                            <p>This is where Westerners lose their minds. Nepal does not use "Millions" or "Billions." We group our large numbers differently.</p>
+                            <p>In the West, commas go every three digits: 1,000,000.<br>In Nepal, after the first thousand, commas go every two digits: 10,00,000.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                                <div style="text-align: center; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex: 1; min-width: 250px;">
+                                    <h5 style="margin-top: 0; color: #6b7280;">Western System</h5>
+                                    <div style="font-size: 2rem; font-weight: bold; color: #374151; font-family: monospace; letter-spacing: 2px;">1,000,000</div>
+                                    <div style="color: #9ca3af; margin-top: 0.5rem;">One Million</div>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                                <div style="text-align: center; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex: 1; min-width: 250px;">
+                                    <h5 style="margin-top: 0; color: #6b7280;">Nepali System</h5>
+                                    <div style="font-size: 2rem; font-weight: bold; color: #059669; font-family: monospace; letter-spacing: 2px;">10,00,000</div>
+                                    <div style="color: #10b981; margin-top: 0.5rem;">Ten Lakh</div>
+                                </div>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>एक सय (Ek Saya)</strong> = 100</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>एक हजार (Ek Hajar)</strong> = 1,000</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>एक लाख (Ek Lakh)</strong> = 100,000 (One Hundred Thousand)</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>दस लाख (Dus Lakh)</strong> = 1,000,000 (One Million)</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>एक करोड (Ek Crore)</strong> = 10,00,0000 (Ten Million)</li>
+                            </ul>
+                            <p><strong>Example:</strong> If a house costs Five Million Rupees, a Nepali will never say "Five Million." They will say <strong>पचास लाख पर्छ (Pachas Lakh parcha)</strong> - It costs 50 Lakh.</p>
+
+                            <h4 style="color: #d32f2f; margin-top: 1.5rem;">3. The Magic Fractions (Sawa, Dedh, Sade)</h4>
+                            <p>These words are absolute gold. If you don't learn these, you cannot survive a real Nepali conversation. We use these for time, money, and measurements constantly.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>सवा (Sawa)</strong> = 1.25 (A quarter extra). <em>Sawa dui = 2.25</em></li>
+                                <li style="margin-bottom: 0.5rem;"><strong>डेढ (Dedh)</strong> = 1.5 (Exactly one and a half). <em>Dedh hajar = 1,500.</em></li>
+                                <li style="margin-bottom: 0.5rem;"><strong>साढे (Sade)</strong> = Plus a half. <em>Sade tin = 3.5 (or 3:30 on a clock).</em></li>
+                                <li style="margin-bottom: 0.5rem;"><strong>पौने (Paune)</strong> = A quarter less. <em>Paune char = 3.75 (or 3:45 on a clock).</em></li>
+                            </ul>
+
+                            <h4 style="color: #7b1fa2; margin-top: 1.5rem;">4. Classifiers (Counting Objects vs. People)</h4>
+                            <p>In English, you say "Three people" and "Three books." In Nepali, the number changes its shape depending on what you are counting.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>जना (Jana)</strong> = Used for counting humans.<br><em>तीन जना मान्छे (Teen jana manche) = Three people.</em></li>
+                                <li style="margin-bottom: 0.5rem;"><strong>वटा (Wata)</strong> = Used for counting objects/things.<br><em>चार वटा किताब (Char wata kitab) = Four books.</em></li>
+                            </ul>
+
+                            <h4 style="color: #0097a7; margin-top: 1.5rem;">5. The Art of Approximation (Sounding Local)</h4>
+                            <p>Nepalis rarely give exact numbers unless they are doing accounting. We round things up and down. If you want to sound fluent, stop being so precise.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>करिब (Karib)</strong> = About / Approximately</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>झन्डै (Jhandai)</strong> = Almost</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>जति (Jati)</strong> = Around / Roughly</li>
+                            </ul>
+                            <p><strong>Example:</strong> Instead of saying "1,480," a local will say: <strong>झन्डै डेढ हजार (Jhandai dedh hajar)</strong> = Almost 1,500.</p>
+
+                            <h4 style="color: #ff5722; margin-top: 1.5rem;">6. Real-World Measurement Units</h4>
+                            <p>When you go to the market or deal with property, you need to know the local units.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>किलो (Kilo)</strong> = Kilogram (Used for all vegetables and meat). <em>Adha kilo = Half a kilo.</em></li>
+                                <li style="margin-bottom: 0.5rem;"><strong>लिटर / मिटर (Liter / Meter)</strong> = Same as English.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>रोपनी / बिघा (Ropani / Bigha)</strong> = Land measurement units. If you are renting or buying land, it is never measured in acres; it is measured in Aana and Ropani.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>तोला (Tola)</strong> = The measurement unit for Gold. (Roughly 11.66 grams).</li>
+                            </ul>
+
+                            <h4 style="color: #607d8b; margin-top: 1.5rem;">7. Percentages & Decimals (The Nepanglish Takeover)</h4>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>प्रतिशत (Pratishat)</strong> = Percent. (Formal).</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>पर्सेन्ट (Percent)</strong> = Percent. (Street level. Everyone says "Das percent" for 10%).</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>दशमलव (Dashamlav)</strong> = Decimal / Point. (Formal textbook math).</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>पोइन्ट (Point)</strong> = Point. (Street level. Everyone says "Dui point panch" for 2.5).</li>
+                            </ul>
+
+                            <div style="background: #e8eaf6; border-left: 4px solid #3f51b5; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h4 style="margin-top: 0; color: #283593;">The Mechanics: Bargaining Phrasebook</h4>
+                                <p>Now put it all together. Here is how you use numbers to survive a transaction in Thamel without getting scammed.</p>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.5rem;"><strong>यसको कति पर्छ? (Yesko kati parcha?)</strong> = How much does this cost?</li>
+                                    <li style="margin-bottom: 0.5rem;"><strong>अलि महँगो भयो। (Ali mahango bhayo.)</strong> = It’s a bit expensive.</li>
+                                    <li style="margin-bottom: 0.5rem;"><strong>अलि मिलाएर दिनुस् न। (Ali milayera dinus na.)</strong> = Please adjust the price a bit. (This is the ultimate polite bargaining phrase. It means "give me a fair discount").</li>
+                                    <li style="margin-bottom: 0.5rem;"><strong>डेढ हजारमा हुन्छ? (Dedh hajar ma huncha?)</strong> = Will you do it for 1,500?</li>
+                                </ul>
+                            </div>
+                        `
+                    },
+                    { 
+                        id: "lesson-12", 
+                        title: "12 Making arrangements",
+                        content: `
+                            <h2>12 Making Arrangements (Locking It Down)</h2>
+                            <p>You know the days of the week, and you know how to tell time. Now you actually have to use them to get people in the same room.</p>
+                            <p>Nepali planning language is incredibly simple. You do not need complex, twisting grammar to set up a meeting. You just need a time, a day, and the word "Let's do it" (Garam).</p>
+                            <p>Here is how you lock down a schedule.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <h3 style="margin: 0;">1. Fixing a Time (Using the Clock Hacks)</h3>
+                            </div>
+                            <p>Let’s put yesterday's lesson on time fractions (Sawa, Sade, Paune) to actual use.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">साढे ३ को लागि ट्याक्सी बोलाऊँ?</span> (Sade tin ko lagi taxi bolau?)</strong><br>
+                                    <em>Meaning: Shall I order the taxi for 3:30? (Notice we just use the English word "taxi").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">सवा ३ बजे गरौँ न।</span> (Sawa tin baje garam na.)</strong><br>
+                                    <em>Meaning: Let’s make it quarter past (3:15). (Reality Check: I cut "Saade ko satta 3:15 garam" from your notes. In real life, nobody says "instead of half-past let's do 3:15." They just jump straight to the new time).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">पौने १२ बजे फुपूलाई लिन सक्छौ?</span> (Paune bara baje fupu lai lina sakchau?)</strong><br>
+                                    <em>Meaning: Can you pick up my aunt at 11:45?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म ५ मिनेट ढिला हुन्छु होला।</span> (Ma 5 minute dhila hunchu hola.)</strong><br>
+                                    <em>Meaning: I might be five minutes late. (Adding hola at the end means "probably" or "might be." It softens the delay).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिम्रो इन्टरभ्यु कति बजे हो?</span> (Timro interview kati baje ho?)</strong><br>
+                                    <em>Meaning: What time is your interview?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">१० बजे हो।</span> (Dus baje ho.)</strong><br>
+                                    <em>Meaning: It’s at 10.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">राम्रोसँग दिनु है।</span> (Ramro sanga dinu hai.) / All the best!</strong><br>
+                                    <em>Meaning: Good luck. (Literally: Give it well. But honestly, most urban Nepalis just say "All the best" or "Best of luck" in English).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2196f3;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                <h3 style="margin: 0;">2. Fixing a Date (Moving the Calendar)</h3>
+                            </div>
+                            <p>When you need to sync up schedules, you need to know how to shift days around without sounding demanding.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); overflow-x: auto;">
+                                <svg width="600" height="180" viewBox="0 0 600 180" style="display: block; margin: 0 auto;">
+                                    <!-- Calendar Base -->
+                                    <rect x="50" y="20" width="500" height="140" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" />
+                                    <rect x="50" y="20" width="500" height="40" rx="8" fill="#f3f4f6" />
+                                    
+                                    <!-- Days Header -->
+                                    <text x="100" y="45" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Sun</text>
+                                    <text x="180" y="45" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Mon</text>
+                                    <text x="260" y="45" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Tue</text>
+                                    <text x="340" y="45" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Wed</text>
+                                    <text x="420" y="45" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Thu</text>
+                                    <text x="500" y="45" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="14" font-family="sans-serif">Fri</text>
+                                    
+                                    <!-- Grid Lines -->
+                                    <line x1="50" y1="60" x2="550" y2="60" stroke="#e5e7eb" stroke-width="2" />
+                                    
+                                    <!-- Tuesday (Mangalbar) - Cancelled -->
+                                    <rect x="220" y="70" width="80" height="80" rx="4" fill="#fee2e2" stroke="#fca5a5" stroke-width="2" />
+                                    <text x="260" y="100" text-anchor="middle" fill="#ef4444" font-weight="bold" font-size="16" font-family="sans-serif">12</text>
+                                    <line x1="240" y1="110" x2="280" y2="130" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+                                    <line x1="280" y1="110" x2="240" y2="130" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+                                    
+                                    <!-- Arrow -->
+                                    <path d="M 305 110 Q 320 90 335 110" fill="none" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrowhead)" />
+                                    <defs>
+                                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                            <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+                                        </marker>
+                                    </defs>
+                                    <text x="320" y="85" text-anchor="middle" fill="#3b82f6" font-weight="bold" font-size="12" font-family="sans-serif">Shift (Sarnu)</text>
+
+                                    <!-- Wednesday (Budhabar) - Confirmed -->
+                                    <rect x="300" y="70" width="80" height="80" rx="4" fill="#d1fae5" stroke="#6ee7b7" stroke-width="2" />
+                                    <text x="340" y="100" text-anchor="middle" fill="#10b981" font-weight="bold" font-size="16" font-family="sans-serif">13</text>
+                                    <polyline points="325 120 335 130 355 110" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिमी मङ्गलबार फ्री छौ?</span> (Timi Mangalbar free chau?)</strong><br>
+                                    <em>Meaning: Are you free Tuesday? (Mixing "free" with the Nepali verb is standard street talk).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">फ्री त छु, तर धेरै ढिलोसम्म चाहिँ हुँदैन।</span> (Free ta chu, tara dherai dhilo samma chai hudaina.)</strong><br>
+                                    <em>Meaning: I am, but not until too late.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">बुधबार सारौँ त?</span> (Budhabar sarau ta?)</strong><br>
+                                    <em>Meaning: Should we switch to Wednesday? (The verb sarnu means to shift or move. Very useful for rescheduling).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">शुक्रबार ठिक छ मलाई।</span> (Shukrabar thik cha malai.)</strong><br>
+                                    <em>Meaning: Friday works for me.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">शनिबार आउन भ्याउँदैन।</span> (Sanibar auna bhyaundaina.)</strong><br>
+                                    <em>Meaning: We can’t come Saturday. (Literally: Can't manage the time to come. This is much more natural than saying "Auna sakdaina" which sounds like you physically lack the ability to walk).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">केही छैन, आइतबार गरौँ त?</span> (Kei chaina, Aitabar garam ta?)</strong><br>
+                                    <em>Meaning: No worries, Sunday instead?</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <h3 style="margin: 0;">3. Special Dates (The Big Events)</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">खास दिन कहिले हो?</span> (Khas din kahile ho?)</strong><br>
+                                    <em>Meaning: When’s the big day? (For a wedding, people will usually just bluntly ask "Bihe kahile ho?" - When is the marriage? But Khas din works for general big events).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अर्को वर्ष मे ३१ को लागि फिक्स गर्यौँ।</span> (Arko barsha May 31 ko lagi fix garyam.)</strong><br>
+                                    <em>Meaning: We’ve set it for May 31 next year. (Notice we just use the English month and the English word "fix").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">त्यो दिन फ्री राख है।</span> (Tyo din free rakha hai.)</strong><br>
+                                    <em>Meaning: Keep that day free.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="background: #e1f5fe; border-left: 4px solid #0288d1; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h3 style="margin-top: 0; color: #01579b;">The Mechanics: Your Planning Toolkit</h3>
+                                <p>Look closely at the arrangements above. Planning in Nepali relies on four core anchor words. If you master these, you can organize anything:</p>
+                                <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                    <li style="background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <strong><span class="nepali-font">कति बजे</span> (Kati baje)</strong><br>
+                                        <span style="color: #616161;">What time?</span>
+                                    </li>
+                                    <li style="background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <strong><span class="nepali-font">कहिले</span> (Kahile)</strong><br>
+                                        <span style="color: #616161;">When?</span>
+                                    </li>
+                                    <li style="background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <strong><span class="nepali-font">ठिक छ</span> (Thik cha)</strong><br>
+                                        <span style="color: #616161;">Works for me / It's fine.</span>
+                                    </li>
+                                    <li style="background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <strong><span class="nepali-font">गरौँ</span> (Garam)</strong><br>
+                                        <span style="color: #616161;">Let’s do it.</span>
+                                    </li>
+                                </ul>
+                                <p style="margin-bottom: 0; margin-top: 1rem;">You don't need highly advanced sentence structures to get a beer with a friend or schedule a business meeting. State the time, ask if it works, and lock it in.</p>
+                            </div>
+                        `
+                    },
+                    { 
+                        id: "lesson-13", 
+                        title: "13 Talking about the weather",
+                        content: `
+                            <h2>13 Weather Small Talk (The Universal Icebreaker)</h2>
+                            <p>No matter where you are in the world, weather is the ultimate small talk. If you are standing next to a stranger at a tea shop and have absolutely nothing to say, you talk about the rain.</p>
+                            <p>Nepali weather talk is incredibly simple. You don't need complex grammar. Most of the time, you just name the weather and tack on <strong><span class="nepali-font">छ</span> (cha)</strong> to say it's happening right now, or <strong><span class="nepali-font">सक्छ</span> (sakcha)</strong> to say it might happen later.</p>
+                            <p>Here is your street-level guide to weather talk.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #03a9f4;"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                                <h3 style="margin: 0;">1. Breaking the Ice (Basic Questions)</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">बाहिरको मौसम कस्तो छ?</span> (Bahira ko mausam kasto cha?)</strong><br>
+                                    <em>Meaning: What’s the weather like outside?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिम्रो बिदामा मौसम कस्तो थियो?</span> (Timro bida ma mausam kasto thiyo?)</strong><br>
+                                    <em>Meaning: How was the weather on your holiday? (Reality Check: I fixed the grammar here from "Timi ko" to "Timro". Never say "Timi ko").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आज कति डिग्री छ?</span> (Aaja kati degree cha?)</strong><br>
+                                    <em>Meaning: What’s the temperature today? (Textbooks teach "Tapman kati cha?", but in real life, everyone just uses the English word "degree").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मौसम कस्तो बबाल छ, हैन?</span> (Mausam kasto babal cha, haina?)</strong><br>
+                                    <em>Meaning: Lovely weather, isn't it? (Slang alert: "Babal" means awesome/crazy good. Use it to sound incredibly local).</em>
+                                </li>
+                            </ul>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); display: flex; justify-content: center;">
+                                <svg width="120" height="300" viewBox="0 0 120 300">
+                                    <!-- Thermometer Base -->
+                                    <rect x="45" y="20" width="30" height="220" rx="15" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2" />
+                                    <circle cx="60" cy="250" r="25" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2" />
+                                    
+                                    <!-- Gradient Fill -->
+                                    <defs>
+                                        <linearGradient id="tempGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#ef4444" /> <!-- Hot/Red -->
+                                            <stop offset="50%" stop-color="#f59e0b" /> <!-- Fine/Yellow -->
+                                            <stop offset="100%" stop-color="#3b82f6" /> <!-- Cold/Blue -->
+                                        </linearGradient>
+                                    </defs>
+                                    <rect x="50" y="40" width="20" height="200" rx="10" fill="url(#tempGrad)" />
+                                    <circle cx="60" cy="250" r="20" fill="#3b82f6" />
+                                    
+                                    <!-- Markings -->
+                                    <line x1="35" y1="50" x2="45" y2="50" stroke="#9ca3af" stroke-width="2" />
+                                    <line x1="35" y1="140" x2="45" y2="140" stroke="#9ca3af" stroke-width="2" />
+                                    <line x1="35" y1="230" x2="45" y2="230" stroke="#9ca3af" stroke-width="2" />
+                                    
+                                    <!-- Labels -->
+                                    <text x="85" y="55" fill="#ef4444" font-weight="bold" font-size="14" font-family="sans-serif">गर्मी (Hot)</text>
+                                    <text x="85" y="145" fill="#d97706" font-weight="bold" font-size="14" font-family="sans-serif">ठिक छ (Fine)</text>
+                                    <text x="85" y="235" fill="#2563eb" font-weight="bold" font-size="14" font-family="sans-serif">जाडो (Cold)</text>
+                                </svg>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f44336;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <h3 style="margin: 0;">2. The Extremes (Boiling & Freezing)</h3>
+                            </div>
+                            <p>When the weather gets intense, Nepalis love to exaggerate. You don't just say it's hot; you say the heat is killing you.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">खतरा गर्मी छ।</span> (Khatra garmi cha.)</strong><br>
+                                    <em>Meaning: It’s boiling. / Dangerously hot.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">३० क्रस गर्यो।</span> (Tees cross garyo.)</strong><br>
+                                    <em>Meaning: Over 30 degrees. (Literally: It crossed 30. Very common street phrasing).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अलि जाडो छ।</span> (Ali jado cha.)</strong><br>
+                                    <em>Meaning: It’s chilly. (A little bit cold).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">कठ्याङ्ग्रिने जाडो छ।</span> (Kathangrine jado cha.)</strong><br>
+                                    <em>Meaning: It’s freezing / bone-chilling cold.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">धमाधम पानी परिरहेको छ।</span> (Dhamadham pani parirako cha.)</strong><br>
+                                    <em>Meaning: It’s pouring. (Dhamadham is a great sound-word that means something is happening heavily and continuously).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हावाहुरी चलिरहेको छ।</span> (Hawahuri chalirako cha.)</strong><br>
+                                    <em>Meaning: It’s blowing a gale / a storm is rolling in.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9c27b0;"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/></svg>
+                                <h3 style="margin: 0;">3. Mixed Weather & The Forecast</h3>
+                            </div>
+                            <p>If you want to sound like you know what you're talking about, here is how you describe what's coming.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">घाम-पानी</span> (Gham-pani)</strong><br>
+                                    <em>Meaning: Sunshine and showers. (Fun Cultural Note: When it rains while the sun is shining, Nepalis say the jackals are getting married—"Syal ko bihe").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ठाउँ-ठाउँमा पानी पर्न सक्छ।</span> (Thau-thau ma pani parna sakcha.)</strong><br>
+                                    <em>Meaning: Scattered showers. (Literally: Rain might fall in place-to-place).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">पछि हुस्सु लाग्छ।</span> (Pachi husshu lagcha.)</strong><br>
+                                    <em>Meaning: Mist and fog will form later.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हिउँ पर्छ होला।</span> (Hiu parcha hola.)</strong><br>
+                                    <em>Meaning: Snow is expected / It will probably snow.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आज अलि बढी नै गर्मी छ।</span> (Aaja ali badi nai garmi cha.)</strong><br>
+                                    <em>Meaning: Temperatures are above average. (Literally: It's quite a bit hotter today).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #607d8b;"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+                                <h3 style="margin: 0;">4. The "News Anchor" Forecast</h3>
+                            </div>
+                            <p>If you are watching the morning news, this is what you will hear the forecaster say. It is slightly more formal.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">भोलिको मौसम यस्तो हुनेछ।</span> (Bholi ko mausam yesto hunecha.)</strong><br>
+                                    <em>Meaning: Here’s the forecast for tomorrow.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">बढीजसो बादल लाग्नेछ।</span> (Badi jaso badal lagnecha.)</strong><br>
+                                    <em>Meaning: It will be mainly cloudy.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अलिअलि पानी पर्न सक्छ।</span> (Ali-ali pani parna sakcha.)</strong><br>
+                                    <em>Meaning: A slight chance of rain.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="background: #e8eaf6; border-left: 4px solid #3f51b5; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h3 style="margin-top: 0; color: #283593;">The Mechanics: The Weather Holy Trinity</h3>
+                                <p>Look at the patterns above. You don't need a massive vocabulary to survive Nepali weather talk. You just need a noun (sun, rain, wind) and one of these three verbs:</p>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.5rem;"><strong>...<span class="nepali-font">छ</span> (...cha)</strong> = It is (State of being). <em>Garmi cha. (It is hot).</em></li>
+                                    <li style="margin-bottom: 0.5rem;"><strong>...<span class="nepali-font">परिरहेको छ</span> (...parirako cha)</strong> = It is falling/happening right now. <em>Pani parirako cha. (Rain is falling).</em></li>
+                                    <li style="margin-bottom: 0.5rem;"><strong>...<span class="nepali-font">सक्छ</span> (...sakcha)</strong> = It might happen. <em>Pani parna sakcha. (Rain might fall).</em></li>
+                                </ul>
+                                <p style="margin-bottom: 0; margin-top: 1rem;">Keep it simple. Describe what you feel, add a verb, and you instantly have a conversation starter.</p>
+                            </div>
+                        `
+                    }
                 ]
             },
             {
                 title: "FAMILY AND RELATIONSHIPS",
                 lessons: [
-                    { id: "lesson-14", title: "14 Family and relationships" },
-                    { id: "lesson-15", title: "15 Talking about family" },
-                    { id: "lesson-16", title: "16 Life events" },
-                    { id: "lesson-17", title: "17 Socializing" },
-                    { id: "lesson-18", title: "18 Dating and romance" },
+                    { 
+                        id: "lesson-14", 
+                        title: "14 Family and relationships",
+                        content: `
+                            <h2>14 Family, Relatives & The "Dai/Didi" Culture</h2>
+                            <p>In English, "Uncle" covers every male relative your parents' age. In Nepali, if you just say "Uncle," nobody knows who the hell you are talking about.</p>
+                            <p>Nepali language maps out the exact bloodline, age, and hierarchy of the family in the words themselves. The specific word you use tells everyone exactly how you are related. It sounds complicated, but once you see the matrix, it makes perfect sense.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); overflow-x: auto;">
+                                <svg width="800" height="300" viewBox="0 0 800 300" style="display: block; margin: 0 auto;">
+                                    <!-- Center Divider -->
+                                    <line x1="400" y1="20" x2="400" y2="280" stroke="#d1d5db" stroke-width="2" stroke-dasharray="6" />
+                                    
+                                    <!-- Titles -->
+                                    <text x="200" y="40" text-anchor="middle" fill="#1f2937" font-weight="bold" font-size="18" font-family="sans-serif">Father's Side</text>
+                                    <text x="600" y="40" text-anchor="middle" fill="#1f2937" font-weight="bold" font-size="18" font-family="sans-serif">Mother's Side</text>
+
+                                    <!-- Father's Side Nodes -->
+                                    <!-- Thulobuwa -->
+                                    <rect x="100" y="80" width="200" height="40" rx="8" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" />
+                                    <text x="200" y="105" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="14" font-family="sans-serif">ठुलोबुवा (Thulobuwa)</text>
+                                    <text x="200" y="135" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Older Brother</text>
+
+                                    <!-- Kaka -->
+                                    <rect x="100" y="160" width="200" height="40" rx="8" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" />
+                                    <text x="200" y="185" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="14" font-family="sans-serif">काका (Kaka)</text>
+                                    <text x="200" y="215" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Younger Brother</text>
+
+                                    <!-- Fupu -->
+                                    <rect x="100" y="240" width="200" height="40" rx="8" fill="#fce7f3" stroke="#f9a8d4" stroke-width="2" />
+                                    <text x="200" y="265" text-anchor="middle" fill="#be185d" font-weight="bold" font-size="14" font-family="sans-serif">फुपू (Fupu)</text>
+                                    <text x="200" y="295" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Sister</text>
+
+                                    <!-- Mother's Side Nodes -->
+                                    <!-- Mama -->
+                                    <rect x="500" y="80" width="200" height="40" rx="8" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" />
+                                    <text x="600" y="105" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="14" font-family="sans-serif">मामा (Mama)</text>
+                                    <text x="600" y="135" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Brother</text>
+
+                                    <!-- Thuliama -->
+                                    <rect x="500" y="160" width="200" height="40" rx="8" fill="#fce7f3" stroke="#f9a8d4" stroke-width="2" />
+                                    <text x="600" y="185" text-anchor="middle" fill="#be185d" font-weight="bold" font-size="14" font-family="sans-serif">ठुलीआमा (Thuliama)</text>
+                                    <text x="600" y="215" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Older Sister</text>
+
+                                    <!-- Saniama -->
+                                    <rect x="500" y="240" width="200" height="40" rx="8" fill="#fce7f3" stroke="#f9a8d4" stroke-width="2" />
+                                    <text x="600" y="265" text-anchor="middle" fill="#be185d" font-weight="bold" font-size="14" font-family="sans-serif">सानीआमा (Saniama)</text>
+                                    <text x="600" y="295" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Younger Sister</text>
+                                </svg>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <h3 style="margin: 0;">1. The Core Family (The Absolute Basics)</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                                <li style="background: #f5f5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">हजुरबुवा</span> (Hajurbuwa) / <span class="nepali-font">बाजे</span> (Baje)</strong> = Grandfather
+                                </li>
+                                <li style="background: #f5f5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9e9e9e;">
+                                    <strong><span class="nepali-font">हजुरआमा</span> (Hajurama) / <span class="nepali-font">बज्यै</span> (Bajyai)</strong> = Grandmother
+                                </li>
+                                <li style="background: #e3f2fd; padding: 1rem; border-radius: 8px; border-left: 4px solid #2196f3;">
+                                    <strong><span class="nepali-font">बुवा</span> (Buwa) / <span class="nepali-font">बाबा</span> (Baba) / <span class="nepali-font">बा</span> (Baa)</strong> = Father
+                                </li>
+                                <li style="background: #fce4ec; padding: 1rem; border-radius: 8px; border-left: 4px solid #e91e63;">
+                                    <strong><span class="nepali-font">आमा</span> (Aama) / <span class="nepali-font">मामु</span> (Mamu)</strong> = Mother
+                                </li>
+                                <li style="background: #e8f5e9; padding: 1rem; border-radius: 8px; border-left: 4px solid #4caf50;">
+                                    <strong><span class="nepali-font">छोरा</span> (Chhora)</strong> = Son
+                                </li>
+                                <li style="background: #fff3e0; padding: 1rem; border-radius: 8px; border-left: 4px solid #ff9800;">
+                                    <strong><span class="nepali-font">छोरी</span> (Chhori)</strong> = Daughter
+                                </li>
+                                <li style="background: #e0f2f1; padding: 1rem; border-radius: 8px; border-left: 4px solid #009688;">
+                                    <strong><span class="nepali-font">नाति</span> (Nati)</strong> = Grandson (Draft correction: Puta is Sanskrit/Hindi)
+                                </li>
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">नातिनी</span> (Natini)</strong> = Granddaughter
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2196f3;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <h3 style="margin: 0;">2. Siblings (The Most Important Words You Will Learn)</h3>
+                            </div>
+                            <p>You cannot just say "brother" or "sister" in Nepali. You must specify if they are older or younger. This dictates the respect level.</p>
+
+                            <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <li style="background: #e1f5fe; padding: 1rem; border-radius: 8px; border-left: 4px solid #03a9f4;">
+                                    <strong><span class="nepali-font">दाइ</span> (Dai)</strong><br>
+                                    <em>Older Brother</em>
+                                </li>
+                                <li style="background: #e8eaf6; padding: 1rem; border-radius: 8px; border-left: 4px solid #3f51b5;">
+                                    <strong><span class="nepali-font">भाइ</span> (Bhai)</strong><br>
+                                    <em>Younger Brother</em>
+                                </li>
+                                <li style="background: #fce4ec; padding: 1rem; border-radius: 8px; border-left: 4px solid #e91e63;">
+                                    <strong><span class="nepali-font">दिदी</span> (Didi)</strong><br>
+                                    <em>Older Sister</em>
+                                </li>
+                                <li style="background: #f3e5f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                                    <strong><span class="nepali-font">बहिनी</span> (Bahini)</strong><br>
+                                    <em>Younger Sister</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                                <h3 style="margin: 0;">3. The Uncle & Aunt Matrix</h3>
+                            </div>
+                            <p>This is where the English language fails. In Nepali, an uncle is not just an uncle.</p>
+
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                <div>
+                                    <h4 style="color: #1976d2; margin-bottom: 0.5rem;">Father’s Side:</h4>
+                                    <ul style="list-style-type: none; padding: 0;">
+                                        <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">ठुलोबुवा</span> (Thulobuwa)</strong> = Father’s older brother.</li>
+                                        <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">काका</span> (Kaka)</strong> = Father’s younger brother.</li>
+                                        <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">फुपू</span> (Fupu)</strong> = Father’s sister.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 style="color: #c2185b; margin-bottom: 0.5rem;">Mother’s Side:</h4>
+                                    <ul style="list-style-type: none; padding: 0;">
+                                        <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">मामा</span> (Mama)</strong> = Mother’s brother.</li>
+                                        <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">ठुलीआमा</span> (Thuliama)</strong> = Mother’s older sister.</li>
+                                        <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">सानीआमा</span> (Saniama)</strong> = Mother’s younger sister.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div style="background: #fff3e0; border-left: 4px solid #ff9800; padding: 1rem; border-radius: 4px; margin: 1.5rem 0;">
+                                <strong style="color: #e65100;">Reality Check:</strong> If you have cousins, you don't call them "cousins." You call them your Dai, Bhai, Didi, or Bahini depending on their age. We treat cousins exactly like siblings.
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #e91e63;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <h3 style="margin: 0;">4. Love & Marriage (Street Level)</h3>
+                            </div>
+                            <p>Textbooks will teach you words like Pati and Patni (Husband/Wife). That’s highly formal. Here is how normal people talk about their relationship status.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>सिंगल (Single)</strong> = Single. (Yep, just use English).</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>ब्वायफ्रेन्ड / गर्लफ्रेन्ड (Boyfriend/Girlfriend)</strong> = We just use the English words.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">बुढा</span> (Budha) / <span class="nepali-font">श्रीमान्</span> (Shriman)</strong> = Husband. (Shriman is formal. Budha, which literally means "old man," is the deeply affectionate, common street term).</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">बुढी</span> (Budhi) / <span class="nepali-font">श्रीमती</span> (Shrimati)</strong> = Wife. (Shrimati is formal. Budhi is the affectionate, everyday term).</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">बिहे</span> (Bihe)</strong> = Wedding / Marriage.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">बिहे भएको</span> (Bihe bhako)</strong> = Married.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>डिभोर्स (Divorce)</strong> = Divorced. (Draft correction: Nobody uses "Talaq" unless they are in the Muslim community, and the legal term is too complex for daily speech. Everyone just uses the English word).</li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #607d8b;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <h3 style="margin: 0;">5. In-Laws (The Respect Zone)</h3>
+                            </div>
+                            <p>When you marry a Nepali, you don't just marry them; you marry their hierarchy.</p>
+
+                            <ul style="list-style-type: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                                <li style="background: #eceff1; padding: 1rem; border-radius: 8px; border-left: 4px solid #607d8b;">
+                                    <strong><span class="nepali-font">ससुरा</span> (Sasura)</strong><br>
+                                    <em>Father-in-law</em>
+                                </li>
+                                <li style="background: #eceff1; padding: 1rem; border-radius: 8px; border-left: 4px solid #607d8b;">
+                                    <strong><span class="nepali-font">सासू</span> (Sasu)</strong><br>
+                                    <em>Mother-in-law</em>
+                                </li>
+                                <li style="background: #eceff1; padding: 1rem; border-radius: 8px; border-left: 4px solid #607d8b;">
+                                    <strong><span class="nepali-font">ज्वाइँ</span> (Jwai)</strong><br>
+                                    <em>Son-in-law / Sister's husband</em>
+                                </li>
+                                <li style="background: #eceff1; padding: 1rem; border-radius: 8px; border-left: 4px solid #607d8b;">
+                                    <strong><span class="nepali-font">बुहारी</span> (Buhari)</strong><br>
+                                    <em>Daughter-in-law / Brother's wife</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9e9e9e;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+                                <h3 style="margin: 0;">6. Step-Families & Exes</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">सौतेनी आमा</span> (Sauteni Aama)</strong> = Stepmother.</li>
+                                <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">सौतेनी बुवा</span> (Sauteni Buwa)</strong> = Stepfather.</li>
+                            </ul>
+                            
+                            <div style="background: #f5f5f5; border-left: 4px solid #9e9e9e; padding: 1rem; border-radius: 4px; margin: 1rem 0;">
+                                <strong style="color: #616161;">Street Hack:</strong> Honestly, urban youth just say "Step-mom" or "Step-dad." Also, never say "Adha Bhai" for half-brother—that literally means a physically chopped-in-half brother. We just use the English word "Half-brother" or treat them as a regular Bhai.
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>एक्स (Ex)</strong> = Ex-husband/wife. (Just use "Ex." Saying Purano Pati sounds like you are trading in a used car).</li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="background: #e8eaf6; border-left: 4px solid #3f51b5; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h3 style="margin-top: 0; color: #283593;">The Cultural Insight: The "Dai/Didi" Rule</h3>
+                                <p>Here is the ultimate secret to surviving in Nepal: <strong>Everyone is your family.</strong></p>
+                                <p>You almost never use "Mr.", "Mrs.", or "Excuse me, sir." You use family terms for complete strangers based on how old they look compared to you.</p>
+                                
+                                <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0;">
+                                    <div style="display: flex; align-items: center; gap: 1rem; background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #e3f2fd; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🚕</div>
+                                        <div>If the taxi driver looks a few years older than you: <strong>"<span class="nepali-font">दाइ</span> (Dai - Older Brother)"</strong></div>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 1rem; background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #fce4ec; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🥬</div>
+                                        <div>If the woman selling vegetables looks younger than you: <strong>"<span class="nepali-font">बहिनी</span> (Bahini - Younger Sister)"</strong></div>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 1rem; background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #e8f5e9; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏪</div>
+                                        <div>If the shopkeeper looks like he's your dad's age: <strong>"अंकल (Uncle - English word used for older men)"</strong></div>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 1rem; background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #fff3e0; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">☕</div>
+                                        <div>If the lady at the tea shop looks like your mom: <strong>"आन्टी (Aunty - English word used for older women)"</strong></div>
+                                    </div>
+                                </div>
+
+                                <div style="background: #ffebee; border-left: 4px solid #f44336; padding: 1rem; border-radius: 4px; margin-top: 1.5rem;">
+                                    <strong style="color: #d32f2f;">The Anti-Hindi Warning:</strong> Do not add "-ji" to the end of names or titles (like Mama-ji or Kavi-ji). That is Indian culture, heavily popularized by Bollywood. In Nepal, if we want to add high respect to a title, we add <strong>-<span class="nepali-font">ज्यू</span> (-jyu)</strong>. (e.g., Sir-jyu, Mama-jyu). But in daily street talk, you don't even need that. The respect is already baked into the word itself.
+                                </div>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff5722;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <h3 style="margin: 0;">The "Bro" Protocol & The "Bhai" Trap (Crucial Street Hacks)</h3>
+                            </div>
+                            <p>Forget the formal family tree for a second. If you are navigating the streets, cafes, or bars of urban Nepal—especially with anyone under the age of 40—you need to understand the modern hierarchy.</p>
+
+                            <h4 style="color: #e64a19; margin-top: 1.5rem;">1. The Safest Word in the City: "Bro"</h4>
+                            <p>Yes, the English word. It has been completely absorbed into the Nepali language. If a guy is around your age, slightly older, or slightly younger, do not overthink it. Just say "Bro." It is the ultimate, bulletproof equalizer. It shows casual respect without dealing with the heavy age-math of traditional Nepali words.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;"><strong>Street Phrase: <span class="nepali-font">ब्रो, के छ खबर?</span> (Bro, ke cha khabar?)</strong> = Bro, what's up?</li>
+                                <li style="margin-bottom: 0.5rem;"><strong>Street Phrase: <span class="nepali-font">ब्रो, सन्चै हो?</span> (Bro, sanchai ho?)</strong> = Bro, you good?</li>
+                            </ul>
+
+                            <h4 style="color: #d32f2f; margin-top: 1.5rem;">2. The "Bhai" Trap (Tread Lightly)</h4>
+                            <p><strong><span class="nepali-font">भाइ</span> (Bhai)</strong> means younger brother. But you cannot just throw this word around.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem; background: #e8f5e9; padding: 1rem; border-radius: 8px; border-left: 4px solid #4caf50;">
+                                    <strong>When it works:</strong> If someone is clearly and significantly younger than you (like a kid, or a high schooler if you are an adult), Bhai is a warm, affectionate term.
+                                </li>
+                                <li style="margin-bottom: 0.5rem; background: #ffebee; padding: 1rem; border-radius: 8px; border-left: 4px solid #f44336;">
+                                    <strong>The Trap:</strong> If a guy is anywhere near your age, or even just looks a couple of years younger, do not call him Bhai. It comes off as incredibly condescending. It’s a power play, and it’s a great way to piss someone off. When in doubt, default to "Bro."
+                                </li>
+                            </ul>
+
+                            <h4 style="color: #1976d2; margin-top: 1.5rem;">3. The "Dai" Exception (The Microbus Hustle)</h4>
+                            <p>We already established that <strong><span class="nepali-font">दाइ</span> (Dai)</strong> is for older brothers or men clearly older than you. But you are going to see a weird exception on the streets.</p>
+                            <p>If you ride a microbus or a tempo in Kathmandu, the assistant hanging out the door (the khalasi) collecting money will call literally everyone "Dai"—even a 12-year-old kid.</p>
+                            <p>Do not copy this. They do this as a hustle to butter people up and get them onto the bus. It is a very specific, chaotic street tactic. In normal social etiquette, calling a younger person Dai is totally inappropriate. Stick to the rules: Dai for the older guys, Bro for the peers.</p>
+                        `
+                    },
+                    { 
+                        id: "lesson-15", 
+                        title: "15 Talking about family",
+                        content: `
+                            <h2>15 Talking About Your Family (The Reality Check)</h2>
+                            <p>In English, talking about your family is just a matter of listing off vocabulary words. In Nepali, family structure is baked into the language itself. We don't just ask if you have brothers or sisters; we ask for the entire sibling breakdown.</p>
+                            <p>Here is how you actually talk about your family without sounding like a robot.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2196f3;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <h3 style="margin: 0;">1. The Sibling Breakdown (Are you the oldest or youngest?)</h3>
+                            </div>
+                            <p>When someone asks about your family in Nepal, they usually use a specific compound word: <strong><span class="nepali-font">दाजुभाइ दिदीबहिनी</span> (Daju-bhai didi-bahini)</strong>, which covers older/younger brothers and sisters all at once.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिम्रो दाजुभाइ दिदीबहिनी कोही छन्?</span> (Timro daju-bhai didi-bahini kohi chhan?)</strong><br>
+                                    <em>Meaning: Have you got any brothers or sisters?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मेरो एउटा दाइ र दुई जना बहिनी छन्।</span> (Mero euta dai ra dui jana bahini chhan.)</strong><br>
+                                    <em>Meaning: I’ve got an older brother and two younger sisters. (Notice we don't say "small older sister"—you use the specific word for younger sister: Bahini).</em>
+                                </li>
+                            </ul>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; align-items: center;">
+                                <h4 style="margin-top: 0; color: #374151; margin-bottom: 1.5rem;">The Birth Order Flex</h4>
+                                <svg width="400" height="250" viewBox="0 0 400 250" style="display: block;">
+                                    <!-- Step 1 (Oldest) -->
+                                    <rect x="50" y="50" width="80" height="150" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" />
+                                    <text x="90" y="120" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="16" font-family="sans-serif">जेठो</text>
+                                    <text x="90" y="140" text-anchor="middle" fill="#0369a1" font-size="12" font-family="sans-serif">(Jetho)</text>
+                                    <text x="90" y="160" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Oldest</text>
+
+                                    <!-- Step 2 (Second) -->
+                                    <rect x="130" y="100" width="80" height="100" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" />
+                                    <text x="170" y="140" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="16" font-family="sans-serif">माइलो</text>
+                                    <text x="170" y="160" text-anchor="middle" fill="#0369a1" font-size="12" font-family="sans-serif">(Mailo)</text>
+                                    <text x="170" y="180" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Second</text>
+
+                                    <!-- Step 3 (Third) -->
+                                    <rect x="210" y="150" width="80" height="50" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2" />
+                                    <text x="250" y="175" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="16" font-family="sans-serif">साइँलो</text>
+                                    <text x="250" y="190" text-anchor="middle" fill="#0369a1" font-size="12" font-family="sans-serif">(Sailo)</text>
+                                    
+                                    <!-- Step 4 (Youngest) -->
+                                    <rect x="290" y="180" width="80" height="20" fill="#fce7f3" stroke="#f9a8d4" stroke-width="2" />
+                                    <text x="330" y="170" text-anchor="middle" fill="#be185d" font-weight="bold" font-size="16" font-family="sans-serif">कान्छो</text>
+                                    <text x="330" y="150" text-anchor="middle" fill="#be185d" font-size="12" font-family="sans-serif">(Kanchho)</text>
+                                    <text x="330" y="130" text-anchor="middle" fill="#64748b" font-size="12" font-family="sans-serif">Youngest</text>
+                                    
+                                    <!-- Base Line -->
+                                    <line x1="30" y1="200" x2="390" y2="200" stroke="#9ca3af" stroke-width="2" />
+                                </svg>
+                                <p style="text-align: center; color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">In Nepal, we rarely say "I am the oldest." We have specific titles based on our birth order.</p>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म जेठो हो। / म जेठी हो।</span> (Ma jetho ho / Ma jethi ho.)</strong><br>
+                                    <em>Meaning: I’m the oldest (Jetho for male / Jethi for female).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म माइलो हो। / म माइली हो।</span> (Ma mailo ho / Ma maili ho.)</strong><br>
+                                    <em>Meaning: I’m the middle child / second child.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म कान्छो हो। / म कान्छी हो।</span> (Ma kanchho ho / Ma kanchhi ho.)</strong><br>
+                                    <em>Meaning: I’m the youngest. (This is a huge term of endearment in Nepali culture).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म एक्लो छोरा/छोरी हो।</span> (Ma eklo chhora/chhori ho.)</strong><br>
+                                    <em>Meaning: I’m an only child (son/daughter).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <h3 style="margin: 0;">2. Checking In (The "Everyone Good?" Rule)</h3>
+                            </div>
+                            <p>In the West, people ask psychological questions like, "Are you close to your parents?" Do not ask this in Nepal. Family closeness is simply assumed—it’s the default setting of the culture.</p>
+                            <p>Instead of asking how they feel about their family, you show respect by asking about their family's health. This is the ultimate, mandatory social check-in.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #e8f5e9; border-radius: 12px; border: 1px solid #81c784; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🤝</div>
+                                    <div style="font-weight: bold; color: #2e7d32;">Greeting a Friend</div>
+                                </div>
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏡</div>
+                                    <div style="font-weight: bold; color: #2e7d32;">Honoring the Household</div>
+                                </div>
+                            </div>
+                            <p style="text-align: center; color: #6b7280; font-size: 0.9rem; margin-top: -1rem; margin-bottom: 2rem;">In Nepal, you aren't just saying hi to an individual; you are saying hi to their whole ecosystem.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">घरमा सबै सन्चै हुनुहुन्छ?</span> (Ghar ma sabai sanchai hunuhuncha?)</strong><br>
+                                    <em>Meaning: Is everyone at home well? (This is your bulletproof, everyday family check-in. Memorize it).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">बुवा-आमा सन्चै हुनुहुन्छ?</span> (Buwa-aama sanchai hunuhuncha?)</strong><br>
+                                    <em>Meaning: Are mom and dad doing well? (Highly respectful to ask, even if you’ve never met them).</em>
+                                </li>
+                            </ul>
+
+                            <h4 style="color: #009688; margin-top: 1.5rem;">Catching Up</h4>
+                            <p>When you are catching up with friends, keep the language relaxed.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म बाबा-आमासँग प्रायः सधैँ कुरा गर्छु।</span> (Ma baba-aama sanga praya sadhai kura garchu.)</strong><br>
+                                    <em>Meaning: I talk to my parents almost every day.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तर आजकाल दिदीसँग त्यति भेट हुँदैन।</span> (Tara aajakal didi sanga tyati bhet hudaina.)</strong><br>
+                                    <em>Meaning: But I don’t see my sister much these days.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ऊ इन्डिया सिफ्ट भई।</span> (U India shift bhayi.)</strong><br>
+                                    <em>Meaning: She moved to India.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #e91e63;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <h3 style="margin: 0;">3. Kids & Grandkids (The Due Date Rule)</h3>
+                            </div>
+                            <p>If you are expecting a baby, do not translate English idioms like "on the way." Nepalis are highly practical; they just name the exact month the baby is due.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिम्रो छोराछोरी छन्?</span> (Timro chhora-chhori chhan?)</strong><br>
+                                    <em>Meaning: Have you got any kids? (Chhora-chhori literally means sons-daughters. It's the standard term for children).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिमी नि?</span> (Timi ni?)</strong><br>
+                                    <em>Meaning: How about you?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मेरो एउटा सानो बच्चा छ, अनि अर्को चाहिँ यही वैशाखमा।</span> (Mero euta sano bachha cha, ani arko chai yehi Baisakh ma.)</strong><br>
+                                    <em>Meaning: I’ve got a toddler, and the next one is due this Baisakh. (Cultural Rule: Don't say "number two is on the way." Just say "arko" [the next one] and give the Nepali month).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तपाईँको नातिनातिनी कति जना छन्?</span> (Tapai ko nati-natini kati jana chhan?)</strong><br>
+                                    <em>Meaning: How many grandchildren have you got? (Nati = Grandson. Natini = Granddaughter).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">दुई जना नाति र एउटी नातिनी।</span> (Dui jana nati ra euti natini.)</strong><br>
+                                    <em>Meaning: Two grandsons and a granddaughter.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म उनीहरूलाई एकदम माया गर्छु।</span> (Ma uniharu lai ekdam maya garchu.)</strong><br>
+                                    <em>Meaning: I adore them / I love them very much.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #795548;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                <h3 style="margin: 0;">4. Extended Family & Roots</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आज हजुरआमालाई भेट्न जाने।</span> (Aaja hajur-aama lai bhetna jaane.)</strong><br>
+                                    <em>Meaning: We are visiting grandma today.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">त्यहाँ आन्टी पनि हुनुहुन्छ।</span> (Tyaha Aunty pani hunuhuncha.)</strong><br>
+                                    <em>Meaning: Auntie will be there too. (In urban areas, everyone just uses "Aunty" instead of figuring out the exact Kaki/Fupu translation).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म गाउँमा हुर्केको हो।</span> (Ma gaun ma hurkeko ho.)</strong><br>
+                                    <em>Meaning: I grew up in the village. (Cultural Rule: Don't name geographic regions like a map by saying "I grew up in the Himalayas." "Gaun" [village] is the ultimate, authentic way Nepalis talk about their childhood roots).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="background: #e8eaf6; border-left: 4px solid #3f51b5; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h3 style="margin-top: 0; color: #283593;">The Mechanics: Pronoun Reality Check</h3>
+                                <p>Here is a quick cheat code for sounding natural when talking about belonging:</p>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">मेरो</span> (Mero)</strong> = My. <em>(Mero bhai cha = I have a brother).</em></li>
+                                    <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">तिम्रो</span> (Timro)</strong> = Your. <em>(Timro didi cha? = Do you have an older sister?)</em></li>
+                                </ul>
+                                <p style="margin-bottom: 0; margin-top: 1rem;">Don't overcomplicate it with heavy grammar. Keep it simple, use the English words when you get stuck, and always respect the birth order.</p>
+                            </div>
+                        `
+                    },
+                    { 
+                        id: "lesson-16", 
+                        title: "16 Life events",
+                        content: `
+                            <h2>16 Life Events & Milestones (How to Celebrate Like a Local)</h2>
+                            <p>When big things happen in life—birthdays, weddings, promotions, or buying a house—Nepalis don't use stiff, poetic language. We keep it warm, loud, and heavily mixed with English.</p>
+                            <p>Before we dive into the phrases, you need to memorize the golden rule of Nepali celebrations. There are two major words you use, and if you mix them up, you sound ridiculous.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                                <div style="text-align: center; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex: 1; min-width: 250px; border-top: 4px solid #4caf50;">
+                                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎉</div>
+                                    <h4 style="margin-top: 0; color: #2e7d32; font-size: 1.25rem;"><span class="nepali-font">बधाई छ</span><br>(Badhai Cha)</h4>
+                                    <div style="font-weight: bold; color: #374151; margin-bottom: 0.5rem;">Congratulations</div>
+                                    <div style="color: #6b7280; font-size: 0.9rem;">Used for things you achieved or got.</div>
+                                    <div style="margin-top: 1rem; font-size: 0.85rem; color: #4caf50; background: #e8f5e9; padding: 0.5rem; border-radius: 4px;">Baby • Job • Graduation</div>
+                                </div>
+                                <div style="text-align: center; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); flex: 1; min-width: 250px; border-top: 4px solid #2196f3;">
+                                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎂</div>
+                                    <h4 style="margin-top: 0; color: #1565c0; font-size: 1.25rem;"><span class="nepali-font">शुभकामना</span><br>(Shubhakamana)</h4>
+                                    <div style="font-weight: bold; color: #374151; margin-bottom: 0.5rem;">Best Wishes</div>
+                                    <div style="color: #6b7280; font-size: 0.9rem;">Used for calendar events.</div>
+                                    <div style="margin-top: 1rem; font-size: 0.85rem; color: #2196f3; background: #e3f2fd; padding: 0.5rem; border-radius: 4px;">Birthdays • Anniversaries • Festivals</div>
+                                </div>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <h3 style="margin: 0;">1. The Golden Words</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">बधाई छ!</span> (Badhai cha!)</strong> = Congratulations! <em>(Use this when they did something or got something. E.g., a new job, a new baby, a wedding).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">शुभकामना!</span> (Shubhakamana!)</strong> = Best Wishes! <em>(Use this for recurring events. E.g., Birthdays, Festivals, Anniversaries).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #e91e63;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <h3 style="margin: 0;">2. Birthdays & Wins (Keep It English)</h3>
+                            </div>
+                            <p>In urban Nepal, nobody translates "Happy Birthday" or "Graduation" into pure Nepali anymore. Just use the English words and wrap them in Nepali grammar.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong>ह्याप्पी बर्थडे! (Happy Birthday!)</strong><br>
+                                    <em>Meaning: Happy Birthday! (You can say "Janmadin ko shubhakamana," but honestly, everyone just yells Happy Birthday).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">के के गिफ्ट पायौ त?</span> (Ke ke gift payeu ta?)</strong><br>
+                                    <em>Meaning: What presents did you get? (Notice the Nepanglish. Do not say "upahar mile" – that is Hindi).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">सुनेँ, तिम्रो प्रमोसन भयो। बधाई छ है!</span> (Sune, timro promotion bhayo. Badhai cha hai!)</strong><br>
+                                    <em>Meaning: I heard you got a promotion. Congrats! (This is how you naturally say "I hear congratulations are in order").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हामीलाई तिम्रो एकदम गर्व छ।</span> (Hami lai timro ekdam garva cha.)</strong><br>
+                                    <em>Meaning: We are so proud of you. (Garva = Pride).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9c27b0;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <h3 style="margin: 0;">3. Weddings & Babies</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">नयाँ जोडीलाई धेरै धेरै बधाई!</span> (Naya jodi lai dherai dherai badhai!)</strong><br>
+                                    <em>Meaning: Huge congratulations to the new couple!</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">सबैजनालाई धन्यवाद।</span> (Sabai jana lai dhanyabad.)</strong><br>
+                                    <em>Meaning: Thanks everyone. (How the couple replies).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">छोरा/छोरी भएकोमा बधाई छ!</span> (Chhora/Chhori bhayeko ma badhai cha!)</strong><br>
+                                    <em>Meaning: Congrats on having a boy/girl! (Literally: Congrats on a son/daughter happening).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">कस्तो क्युट छ, हैन?</span> (Kasto cute cha, haina?)</strong><br>
+                                    <em>Meaning: Isn't he/she beautiful? (Yep, just use the English word "cute").</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                <h3 style="margin: 0;">4. The New House Flex</h3>
+                            </div>
+                            <p>Owning a house in Kathmandu is a massive deal. When someone pulls it off, you acknowledge the grind.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">नयाँ घरमा स्वागत छ।</span> (Naya ghar ma swagat cha.)</strong><br>
+                                    <em>Meaning: Welcome to my new home.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आखिर आफ्नै घर भयो।</span> (Aakhir aafnai ghar bhayo.)</strong><br>
+                                    <em>Meaning: Your very own place at last. (Aakhir = Finally/At last).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #00bcd4;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <h3 style="margin: 0;">5. Anniversaries & Retirement</h3>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong>ह्याप्पी एनिभर्सरी! (Happy Anniversary!)</strong><br>
+                                    <em>Meaning: Happy Anniversary. (Again, don't say "Biheko barsiko subhakamana." It sounds like a legal document).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अझै ३० वर्ष यस्तै बित्न पाओस्।</span> (Ajhai 30 barsha yastai bitna paaos.)</strong><br>
+                                    <em>Meaning: Here’s to another 30 years. (Literally: May another 30 years pass exactly like this).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">रिटायरमेन्टको शुभकामना।</span> (Retirement ko shubhakamana.)</strong><br>
+                                    <em>Meaning: All the best for your retirement.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म सबैलाई मिस गर्नेछु।</span> (Ma sabai lai miss garnechu.)</strong><br>
+                                    <em>Meaning: I will miss you all. (Garnechu is the future tense. Use this when you are saying your final goodbyes).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #607d8b;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+                                <h3 style="margin: 0;">6. Expressing Sympathy (The Reality Check - Part 2)</h3>
+                            </div>
+                            <p>We covered this in Day 13, but it bears repeating because the textbook translations are dangerous here.</p>
+                            <p>Do not use the word Nukhsan for a death. Nukhsan means you crashed your car or lost money in the stock market. For human loss, you share the sadness.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">एकदम दुःख लाग्यो।</span> (Ekdam dukha lagyo.)</strong><br>
+                                    <em>Meaning: I am so sorry for your loss. (Literally: Extreme sadness was felt).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">केही हेल्प चाहियो भने भन्नु है।</span> (Kehi help chahiyo bhane bhannu hai.)</strong><br>
+                                    <em>Meaning: Let me know if there is anything I can do. (Using the English word "help" makes it sound human and direct, not like a formal customer service offer).</em>
+                                </li>
+                            </ul>
+                        `
+                    },
+                    { 
+                        id: "lesson-17", 
+                        title: "17 Socializing",
+                        content: `
+                            <h2>17 Party Talk & Mingling (Working the Room)</h2>
+                            <p>Socializing at a party in Nepal is all about the energy. It’s loud, it’s casual, and nobody cares about perfect formal grammar. You mix English words constantly, you drop pronouns to talk faster, and you keep the vibe warm.</p>
+                            <p>If you use textbook Nepali at a house party, you’re going to sound like a politician giving a speech. Here is how you actually work the room.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff5722;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <h3 style="margin: 0;">1. Greetings & The "Fancy Seeing You Here" Surprise</h3>
+                            </div>
+                            <p>When you bump into someone, keep it high energy.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ओहो! तिमी पनि यहाँ?</span> (Oho! Timi pani yaha?)</strong><br>
+                                    <em>Meaning: Hey, fancy seeing you here! (Reality Check: I killed "Arre" from your notes because that is Hindi. "Oho!" is the ultimate Nepali exclamation for surprise).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">भेटेर खुसी लाग्यो।</span> (Bhetera khusi lagyo.)</strong><br>
+                                    <em>Meaning: Great to see you.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">के छ खबर? / कस्तो छौ?</span> (Ke cha khabar? / Kasto chhau?)</strong><br>
+                                    <em>Meaning: How are you doing? / What's up?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ठिक छ। तिम्रो नि?</span> (Thik cha. Timro ni?)</strong><br>
+                                    <em>Meaning: I’m good. How about you? (Literally: Fine. Yours?)</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2196f3;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <h3 style="margin: 0;">2. Introducing People & Networking</h3>
+                            </div>
+                            <p>Parties are where you make connections. Keep the introductions smooth.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; align-items: center;">
+                                <h4 style="margin-top: 0; color: #374151; margin-bottom: 1.5rem;">The Circle Introduction</h4>
+                                <svg width="400" height="200" viewBox="0 0 400 200" style="display: block;">
+                                    <!-- Person A (You) -->
+                                    <circle cx="100" cy="100" r="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
+                                    <path d="M80 160 Q100 120 120 160" fill="none" stroke="#0284c7" stroke-width="2" />
+                                    <text x="100" y="105" text-anchor="middle" fill="#0284c7" font-weight="bold" font-family="sans-serif">You</text>
+                                    
+                                    <!-- Person B (New Friend) -->
+                                    <circle cx="200" cy="60" r="30" fill="#fce7f3" stroke="#db2777" stroke-width="2" />
+                                    <path d="M180 120 Q200 80 220 120" fill="none" stroke="#db2777" stroke-width="2" />
+                                    <text x="200" y="65" text-anchor="middle" fill="#db2777" font-weight="bold" font-family="sans-serif">Rick</text>
+                                    
+                                    <!-- Person C (Old Friend) -->
+                                    <circle cx="300" cy="100" r="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
+                                    <path d="M280 160 Q300 120 320 160" fill="none" stroke="#0284c7" stroke-width="2" />
+                                    <text x="300" y="105" text-anchor="middle" fill="#0284c7" font-weight="bold" font-family="sans-serif">Friend</text>
+
+                                    <!-- Introduction Arrow -->
+                                    <path d="M135 90 Q165 75 165 75" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrowhead)" />
+                                    <path d="M265 90 Q235 75 235 75" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="4" marker-end="url(#arrowhead)" />
+                                    
+                                    <!-- Speech Bubble -->
+                                    <rect x="120" y="10" width="160" height="30" rx="15" fill="#fff" stroke="#9ca3af" stroke-width="1" />
+                                    <text x="200" y="30" text-anchor="middle" fill="#4b5563" font-size="12" font-family="sans-serif">ऊ चाहिँ रिक हो। (U chai Rick ho.)</text>
+
+                                    <defs>
+                                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+                                        </marker>
+                                    </defs>
+                                </svg>
+                                <p style="text-align: center; color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Visually mapping out the "U chai [Name] ho" dynamic helps pull someone into a circle.</p>
+                            </div>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">ऊ चाहिँ रिक हो। ऊ पनि तिम्रै कलेज पढेको हो।</span> (U chai Rick ho. U pani timrai college padheko ho.)</strong><br>
+                                    <em>Meaning: This is Rick. He went to the same college as you. (Notice the grammar fix: "Timrai" means exactly your).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अनि, आजकल के काम गर्छौ?</span> (Ani, aajakal ke kaam garchhau?)</strong><br>
+                                    <em>Meaning: So, what do you do these days?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म युएसमा छु। अनि तिमी नि?</span> (Ma US ma chhu. Ani timi ni?)</strong><br>
+                                    <em>Meaning: I’m in the US. How about you?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अनि जेम्मालाई चाहिँ कसरी चिन्छौ?</span> (Ani Gemma lai chai kasari chinchhau?)</strong><br>
+                                    <em>Meaning: So how do you know Gemma?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हामी सँगै काम गर्छौँ।</span> (Hami sangai kaam garchhaun.)</strong><br>
+                                    <em>Meaning: We work together.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हामी स्कुलदेखिको साथी हो।</span> (Hami school dekhi ko sathi ho.)</strong><br>
+                                    <em>Meaning: We are school friends. (Literally: We are friends from school).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #e91e63;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <h3 style="margin: 0;">3. Compliments (The Kathmandu Fit Check)</h3>
+                            </div>
+                            <p>If someone looks good, tell them. But don't mess up the pronouns like a textbook.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिम्रो ड्रेस कस्तो राम्रो! कहाँबाट किनेको?</span> (Timro dress kasto ramro! Kaha bata kineko?)</strong><br>
+                                    <em>Meaning: I love your dress. Where did you get it? (Reality Check: I fixed "Timi ko dress" to "Timro dress". Never say "Timi ko").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">एउटा थ्रिफ्ट स्टोरमा, हजार रुपैयाँमा।</span> (Euta thrift store ma, hajar rupaiya ma.)</strong><br>
+                                    <em>Meaning: At a thrift store for 1000 bucks. (Adapted for Kathmandu context—nobody uses "quid", but thrifting is huge right now).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">कस्तो राम्रो देखिएको आज!</span> (Kasto ramro dekhieko aaja!)</strong><br>
+                                    <em>Meaning: You look great today!</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <h3 style="margin: 0;">4. Catching Up (Long Time No See)</h3>
+                            </div>
+                            <p>When you run into an old coworker or friend, here is how you bridge the gap.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आजकल के गर्दै छौ?</span> (Aajakal ke gardai chhau?)</strong><br>
+                                    <em>Meaning: What have you been up to lately?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">कहाँ छौ आजकल?</span> (Kaha chhau aajakal?)</strong><br>
+                                    <em>Meaning: Where have you been these days? (A very natural way of saying "How have you been?").</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">सब ठिक छ?</span> (Sab thik cha?)</strong><br>
+                                    <em>Meaning: Is everything going well?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हामी सँगै काम गर्थ्यौँ। कस्तो धेरै पछि भेट भएको!</span> (Hami sangai kaam garthyau. Kasto dherai pachi bhet bhako!)</strong><br>
+                                    <em>Meaning: We used to work together. Long time, no see! (Literally: What a meeting after so much time!).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9c27b0;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                                <h3 style="margin: 0;">5. The Host's Exit (Party Thanks)</h3>
+                            </div>
+                            <p>If you are throwing the party, here is how you see people out.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आइदिएकोमा धेरै थ्याङ्क्स है।</span> (Aaidiyeko ma dherai thanks hai.)</strong><br>
+                                    <em>Meaning: Thanks so much for coming. (Nepanglish at its finest. Using "Thanks hai" is infinitely more natural at a house party than a formal "Dhanyabad").</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="background: #fff3e0; border-left: 4px solid #ff9800; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h3 style="margin-top: 0; color: #e65100;">The Mechanics: Pronoun Possession</h3>
+                                <p>A quick cheat code since the original notes completely botched it: If you want to say "Your" or "My", you don't say Timi ko or Ma ko.</p>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">मेरो</span> (Mero)</strong> = My</li>
+                                    <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">तिम्रो</span> (Timro)</strong> = Your (Casual)</li>
+                                    <li style="margin-bottom: 0.5rem;"><strong><span class="nepali-font">तपाईँको</span> (Tapai ko)</strong> = Your (Respectful)</li>
+                                </ul>
+                                <p style="margin-bottom: 0; margin-top: 1rem;">If you use those right, you immediately sound 10x more fluent.</p>
+                            </div>
+                        `
+                    },
+                    { 
+                        id: "lesson-18", 
+                        title: "18 Dating and romance",
+                        content: `
+                            <h2>18 Dating & Romance (The Art of the Stealth Date)</h2>
+                            <p>The concept of a Western-style "date" is historically alien in Nepal. It used to be that you just hung out in groups, or families arranged things.</p>
+                            <p>But today? Kathmandu, Pokhara, and urban hubs have a massive dating scene. Tinder, Bumble, and Instagram sliding are completely normalized. However, the language is still coded. If you literally translate "I want to take you on a romantic date," you are going to sound like a creep or a terrible movie.</p>
+                            <p>In Nepal, dating relies on soft escalation. You don't jump steps. You move from the safe zone to the personal zone, to the physical meetup. Here is how you actually play the game.</p>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #e91e63;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <h3 style="margin: 0;">1. The Modern Escalation (Insta First, Always)</h3>
+                            </div>
+                            <p>If you want to date in urban Nepal, you do not start by asking for a phone number. Because Nepal is still a reputation-heavy society, a phone number feels too intimate, too fast.</p>
+                            <p>Step one is always social media. It is a low-commitment, safe way for them to vet you without giving you direct access to their life.</p>
+
+                            <div style="margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350" width="100%" height="100%" style="max-width: 700px;">
+                                  <rect width="100%" height="100%" fill="#f8fafc" rx="10"/>
+                                  
+                                  <text x="350" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">The Nepali Dating Escalation Staircase</text>
+                                  
+                                  <rect x="50" y="250" width="180" height="60" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+                                  <text x="140" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#334155" text-anchor="middle">1. Instagram</text>
+                                  <text x="140" y="295" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">(Safe Zone / Vetting)</text>
+                                  
+                                  <path d="M 230 250 L 260 220" stroke="#3b82f6" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+                                  
+                                  <rect x="260" y="160" width="180" height="60" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
+                                  <text x="350" y="185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e3a8a" text-anchor="middle">2. Phone Number</text>
+                                  <text x="350" y="205" font-family="Arial, sans-serif" font-size="12" fill="#2563eb" text-anchor="middle">(Trust / Personal Access)</text>
+                                  
+                                  <path d="M 440 160 L 470 130" stroke="#3b82f6" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+                                  
+                                  <rect x="470" y="70" width="180" height="60" rx="8" fill="#bbf7d0" stroke="#4ade80" stroke-width="2"/>
+                                  <text x="560" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#14532d" text-anchor="middle">3. The Coffee Date</text>
+                                  <text x="560" y="115" font-family="Arial, sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">(Actual Interest)</text>
+
+                                  <defs>
+                                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+                                    </marker>
+                                  </defs>
+                                </svg>
+                            </div>
+
+                            <h4 style="color: #1976d2; margin-top: 1.5rem;">The "Insta" Entry Point:</h4>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">इन्स्टा छ?</span> (Insta cha?)</strong><br>
+                                    <em>Meaning: Got Insta? (The absolute standard opener).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिम्रो इन्स्टा के हो?</span> (Timro Insta ke ho?)</strong><br>
+                                    <em>Meaning: What’s your Insta?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">फलो गरौँ न।</span> (Follow garam na.)</strong><br>
+                                    <em>Meaning: Let’s follow each other. (Super soft, highly effective).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">एड गर्दिम् न?</span> (Add gardim na?)</strong><br>
+                                    <em>Meaning: Shall I add you?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आइडी देऊ न।</span> (ID deu na.)</strong><br>
+                                    <em>Meaning: Give me your ID.</em>
+                                </li>
+                            </ul>
+
+                            <div style="background: #e3f2fd; border-left: 4px solid #2196f3; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h4 style="margin-top: 0; color: #1565c0;">Decoding the Response:</h4>
+                                <p>When you ask for their Insta, their response tells you everything about where you stand:</p>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li style="margin-bottom: 0.5rem;">🟢 <strong>"I'll send it to you."</strong> -> Green Light. They are interested.</li>
+                                    <li style="margin-bottom: 0.5rem;">🟡 <strong>"I'm not really active there."</strong> -> Neutral/Yellow Light. They are stalling to feel you out.</li>
+                                    <li style="margin-bottom: 0.5rem;">🔴 <strong>"I don't really use Insta."</strong> -> Red Light. They are politely shutting the door. Back off.</li>
+                                </ul>
+                            </div>
+
+                            <h4 style="color: #d32f2f; margin-top: 1.5rem;">Leveling Up (The Phone Number):</h4>
+                            <p>Only after you have established a vibe on Instagram do you escalate. If someone gives you their number quickly, that signals high trust.</p>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">नम्बर सेयर गर्छौ?</span> (Number share garchau?)</strong><br>
+                                    <em>Meaning: Will you share your number?</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ff9800;"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                                <h3 style="margin: 0;">2. Asking Someone Out (The Stealth Approach)</h3>
+                            </div>
+                            <p>Forget the grand gestures. Keep it low-pressure. We don't say "date"—we ask them to "eat coffee" or just "hang out."</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">यो शनिबार कफी खान जाने हो?</span> (Yo Sanibar coffee khana jane ho?)</strong><br>
+                                    <em>Meaning: Shall we go grab coffee this Saturday? (The #1 way to ask someone on a date in Kathmandu).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">एक दिन भेट्नु पर्छ।</span> (Ek din bhetnu parcha.)</strong><br>
+                                    <em>Meaning: We should meet up sometime.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">शुक्रबार तिर भेटौँ न त।</span> (Shukrabar tira bhetau na ta.)</strong><br>
+                                    <em>Meaning: Let's meet around Friday, maybe?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मलाई तिमीसँग ह्याङआउट गर्न मन छ।</span> (Malai timi sanga hangout garna man cha.)</strong><br>
+                                    <em>Meaning: I'd love to hang out with you. (Nepanglish flex. "Hangout" is universally understood).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4caf50;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <h3 style="margin: 0;">3. Saying Yes (Giving the Green Light)</h3>
+                            </div>
+                            <p>If they are into it, they won't play hard to get with their words.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हुन्छ, जाम न त।</span> (Huncha, jam na ta.)</strong><br>
+                                    <em>Meaning: Sure, let's go. / Sure, why not. (The ultimate casual yes).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मलाई लिन आऊ है।</span> (Malai lina aau hai.)</strong><br>
+                                    <em>Meaning: Pick me up. (Literally: Come to take me).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">शनिबार दिउँसो ठिक छ।</span> (Sanibar diuso thik cha.)</strong><br>
+                                    <em>Meaning: Saturday afternoon works for me.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म म्यासेज गर्छु है।</span> (Ma message garchu hai.)</strong><br>
+                                    <em>Meaning: Good, I'll message you.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #f44336;"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                <h3 style="margin: 0;">4. Turning Them Down (The Soft "No")</h3>
+                            </div>
+                            <p>Nepalis hate blunt rejections. Saying "I don't feel a connection" to someone's face is incredibly harsh here. We use excuses, or we just friendzone them directly to save face.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">अहिले त मलाई खासै फुर्सद छैन।</span> (Ahile ta malai khasai fursad chaina.)</strong><br>
+                                    <em>Meaning: That's really kind, but I already have plans. (Literally: I don't really have free time right now).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म अहिले रिलेसनसिपको लागि रेडी छैन।</span> (Ma ahile relationship ko lagi ready chaina.)</strong><br>
+                                    <em>Meaning: I'm not looking for a relationship, sorry.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">हामी साथी मात्रै ठीक छौँ जस्तो लाग्छ।</span> (Hami sathi matrai thik chaun jasto lagcha.)</strong><br>
+                                    <em>Meaning: I just like you as a friend. (Literally: I feel like we are fine as just friends).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मेरो अलरेडी कोही छ।</span> (Mero already kohi cha.)</strong><br>
+                                    <em>Meaning: Thanks, but I'm actually already seeing someone.</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #9c27b0;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                <h3 style="margin: 0;">5. On the First Date (Breaking the Ice)</h3>
+                            </div>
+                            <p>The date is happening. You sit down. Keep the dialogue human and real.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">कस्तो राम्रो देखिएको आज!</span> (Kasto ramro dekhieko aaja!)</strong><br>
+                                    <em>Meaning: You look great today!</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">थ्याङ्क्स, तिमी पनि।</span> (Thanks, timi pani.)</strong><br>
+                                    <em>Meaning: Thanks. So do you.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">साँचो भन्दा, म अलि नर्भस छु।</span> (Sacho bhanda, ma ali nervous chu.)</strong><br>
+                                    <em>Meaning: I can't lie, I'm a bit nervous. (Saying this works exactly the same way it does in English—it makes you look confident through vulnerability).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">म पनि।</span> (Ma pani.)</strong><br>
+                                    <em>Meaning: So am I. / Me neither.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">एप चलाउन थालेको कति भयो?</span> (App chalauna thaleko kati bhayo?)</strong><br>
+                                    <em>Meaning: Have you been on the app a while? (Tinder/Bumble).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">सिंगल भएको कति भयो?</span> (Single bhayeko kati bhayo?)</strong><br>
+                                    <em>Meaning: How long have you been single?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">तिमी सिरियस रिलेसनसिप खोजेको हो?</span> (Timi serious relationship khojeko ho?)</strong><br>
+                                    <em>Meaning: Are you looking for something serious?</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #00bcd4;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                                <h3 style="margin: 0;">6. Ending the Date (The "Get Home Safe" Rule)</h3>
+                            </div>
+                            <p>This is critical. A Nepali date does not end when you say goodbye. It ends when they are safely inside their house.</p>
+
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">आज धेरै रमाइलो भयो।</span> (Aaja dherai ramailo bhayo.)</strong><br>
+                                    <em>Meaning: I had a really great time today.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">मैले पनि।</span> (Maile pani.)</strong><br>
+                                    <em>Meaning: Same here.</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">फेरि भेट्नु पर्छ है।</span> (Feri bhetnu parcha hai.)</strong><br>
+                                    <em>Meaning: Shall we do it again soon?</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">कसरी जाने घर? ट्याक्सी बोलाइदिऊँ?</span> (Kasari jane ghar? Taxi bolaidiuu?)</strong><br>
+                                    <em>Meaning: How are you getting home? Should I call a cab/Pathao for you? (If you are the guy, you are expected to at least offer this).</em>
+                                </li>
+                                <li style="margin-bottom: 1rem;">
+                                    <strong><span class="nepali-font">पुगेर म्यासेज गर है।</span> (Pugera message gara hai.)</strong><br>
+                                    <em>Meaning: Text me when you get home. (CRITICAL CULTURAL RULE: If you do not say this, you look like you don't care about them. It is the ultimate sign of affection and respect).</em>
+                                </li>
+                            </ul>
+
+                            <hr class="section-divider">
+
+                            <div style="background: #fce4ec; border-left: 4px solid #e91e63; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <h3 style="margin-top: 0; color: #c2185b;">The Cultural Insight: The "Friend" Smokescreen</h3>
+                                <p>If a Nepali person is introducing the person they are dating to their parents or older relatives, they will almost always introduce them as <strong>"mero sathi"</strong> (my friend).</p>
+                                <p style="margin-bottom: 0;">Because arranged marriage and traditional family structures are still heavily present, casually telling your aunt that you are dating someone is a massive headache. Don't be offended if they call you their "friend" in front of their mom. It’s just the smokescreen required to survive the Nepali family gossip network.</p>
+                            </div>
+                        `
+                    },
                     { id: "lesson-19", title: "19 Showing support" }
                 ]
             },
